@@ -1,0 +1,30 @@
+{
+    "name": "IndicatorReference", 
+    "color": "#284f9f", 
+    "aggregates": {}, 
+    "attributes": {
+        "uid-ref": {
+            "id": 0, 
+            "multiplicity": "Optional", 
+            "type": "IDREF", 
+            "name": "uid-ref", 
+            "description": null
+        }, 
+        "version": {
+            "id": 1, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "version", 
+            "description": null
+        }, 
+        "euid-ref": {
+            "id": 2, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "euid-ref", 
+            "description": null
+        }
+    }, 
+    "id": 40, 
+    "description": null
+}

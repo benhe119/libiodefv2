@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<book id="index" xmlns:xi="http://www.w3.org/2003/XInclude">
+  <bookinfo>
+    <title>LibIodef library Reference Manual</title>
+  </bookinfo>
+
+  <part>
+    <title>Using libiodefv2 to interoperate with libiodefv2-manager</title>
+    <xi:include href="xml/libiodefv2.xml"/>
+    <xi:include href="xml/libiodefv2-client.xml"/>
+  </part>
+
+  <part>
+    <title>Sending events with libiodefv2</title>
+    <chapter>
+      <title>The low level IODEFV2 API</title>
+      <xi:include href="xml/iodefv2-tree-wrap.xml"/>
+      <xi:include href="xml/iodefv2-additional-data.xml"/>
+      <xi:include href="xml/iodefv2-time.xml"/>
+      <xi:include href="xml/iodefv2-data.xml"/>
+    </chapter>
+
+    <chapter>
+      <title>The high level IODEFV2 API</title>
+      <xi:include href="xml/iodefv2-path.xml"/>
+      <xi:include href="xml/iodefv2-value.xml"/>
+    </chapter>
+  </part>
+
+  <part>
+    <title>Reading events from the collector</title>
+    <xi:include href="xml/iodefv2-document-read.xml"/>
+    <xi:include href="xml/libiodefv2-connection-pool.xml"/>
+  </part>
+
+  <part>
+    <title>Filtering operation on IODEFV2 messages</title>
+    <xi:include href="xml/iodefv2-criteria.xml"/>
+    <xi:include href="xml/iodefv2-criterion-value.xml"/>
+  </part>
+
+  <chapter>
+    <title>Utility functions</title>
+    <xi:include href="xml/iodefv2-document-print.xml"/>
+  </chapter>
+
+  <chapter>
+    <title>Others</title>
+    <xi:include href="xml/libiodefv2-error.xml"/>
+    <xi:include href="xml/libiodefv2-linked-object.xml"/>
+    <xi:include href="xml/libiodefv2-io.xml"/>
+    <xi:include href="xml/libiodefv2-log.xml"/>
+    <xi:include href="xml/libiodefv2-msg.xml"/>
+    <xi:include href="xml/libiodefv2-option.xml"/>
+    <xi:include href="xml/libiodefv2-connection.xml"/>
+    <xi:include href="xml/libiodefv2-string.xml"/>
+    <xi:include href="xml/libiodefv2-msgbuf.xml"/>
+    <xi:include href="xml/iodefv2-document-write.xml"/>
+    <xi:include href="xml/libiodefv2-ident.xml"/>
+    <xi:include href="xml/libiodefv2-client-profile.xml"/>
+    <xi:include href="xml/libiodefv2-plugin.xml"/>
+    <xi:include href="xml/libiodefv2-hash.xml"/>
+    <xi:include href="xml/libiodefv2-failover.xml"/>
+    <xi:include href="xml/libiodefv2-async.xml"/>
+    <xi:include href="xml/libiodefv2-list.xml"/>
+    <xi:include href="xml/libiodefv2-inttypes.xml"/>
+    <xi:include href="xml/libiodefv2-option-wide.xml"/>
+    <xi:include href="xml/libiodefv2-timer.xml"/>
+  </chapter>
+</book>

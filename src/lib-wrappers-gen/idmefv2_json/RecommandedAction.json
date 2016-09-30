@@ -1,0 +1,17 @@
+{
+  "name": "RecommandedAction",
+  "id": "56",
+  "description": "The RecommandedaAction class is used to describe any actions taken by the analyzer in response to the event.  Is is represented in the IDMEF DTD as follows: ",
+  "color": "#FF5024",
+  "aggregates": {
+  },
+  "attributes": {
+    "action": {
+      "name": "action",
+      "id": "0",
+      "multiplicity": "Required",
+      "type": "STRING",
+      "description": "The default value is \"other\".  (See also Section 10.)"
+    }
+  }
+}

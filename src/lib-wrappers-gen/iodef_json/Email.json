@@ -1,0 +1,25 @@
+{
+  "name": "Email",
+  "id": "2",
+  "description": "The Email class specifies an email address formatted according to EMAIL data type (Section 2.14). ",
+  "color": "#CCFF66",
+  "aggregates": {
+  },
+  "attributes": {
+    "meaning": {
+      "name": "meaning",
+      "id": "1",
+      "multiplicity": "Optional",
+      "ident": "153",
+      "type": "ENUM",
+      "description": "A free-form description of the element content (e.g., hours of coverage for a given number)."
+    },
+    "email": {
+      "name": "email",
+      "id": "2",
+      "multiplicity": "1",
+      "type": "STRING",
+      "description": ""
+    }
+  }
+}

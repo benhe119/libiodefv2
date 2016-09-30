@@ -1,0 +1,32 @@
+{
+  "name": "RelatedActivity",
+  "id": "8",
+  "description": "The RelatedActivity class lists either incident tracking numbers of incidents or URLs (not both) that refer to activity related to the one described in the IODEFV2 document.  These references may be to local incident tracking numbers or to those of other CSIRTs. ",
+  "color": "#99CC00",
+  "aggregates": {
+    "IncidentID": {
+      "name": "IncidentID",
+      "id": "2",
+      "multiplicity": "1..*",
+      "type": null,
+      "description": "The incident tracking number of a related incident."
+    },
+    "URL": {
+      "name": "URL",
+      "id": "1",
+      "multiplicity": "1..*",
+      "type": "STRING",
+      "description": "A URL to activity related to this incident."
+    }
+  },
+  "attributes": {
+    "restriction": {
+      "name": "restriction",
+      "id": "3",
+      "multiplicity": "Optional",
+      "ident": "162",
+      "type": "ENUM",
+      "description": "This attribute has been defined in Section 3.2."
+    }
+  }
+}

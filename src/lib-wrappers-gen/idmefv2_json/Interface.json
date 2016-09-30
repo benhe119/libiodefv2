@@ -1,0 +1,37 @@
+{
+  "name": "Interface",
+  "id": "12",
+  "description": "The Interface class is used describe the interace of a None",
+  "color": "#00CC00",
+  "aggregates": {
+    "Address": {
+      "name": "Address",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "The network or hardware address of the equipment. Unless a name (above) is provided, at least one address must be specified."
+    }
+  },
+  "attributes": {
+    "name": {
+      "name": "name",
+      "id": "0",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Name of the interface"
+    },
+    "category": {
+      "name": "category",
+      "id": "1",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "description": "category of interface (capture, management, network, ...)"
+    },
+    "meaning": {
+      "name": "meaning",
+      "id": "2",
+      "multiplicity": "Optional",
+      "type": "String",
+      "description": "meaning of the interface, if the category is user-specific or vendor-specific"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "AlternativeID",
+  "id": "7",
+  "description": "The AlternativeID class lists the incident tracking numbers used by CSIRTs, other than the one generating the document, to refer to the identical activity described the IODEFV2 document.  A tracking number listed as an AlternativeID references the same incident detected by ",
+  "color": "#99CC00",
+  "aggregates": {
+    "IncidentID": {
+      "name": "IncidentID",
+      "id": "1",
+      "multiplicity": "1..*",
+      "type": null,
+      "description": "The incident tracking number of another CSIRT."
+    }
+  },
+  "attributes": {
+    "restriction": {
+      "name": "restriction",
+      "id": "2",
+      "multiplicity": "Optional",
+      "ident": "161",
+      "type": "ENUM",
+      "description": "This attribute has been defined in Section 3.2."
+    }
+  }
+}

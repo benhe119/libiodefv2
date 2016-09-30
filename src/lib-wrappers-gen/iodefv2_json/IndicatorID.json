@@ -1,0 +1,23 @@
+{
+    "name": "IndicatorID", 
+    "color": "#ffcc00", 
+    "aggregates": {}, 
+    "attributes": {
+        "version": {
+            "id": 0, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "version", 
+            "description": null
+        }, 
+        "name": {
+            "id": 1, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "name", 
+            "description": null
+        }
+    }, 
+    "id": 56, 
+    "description": null
+}

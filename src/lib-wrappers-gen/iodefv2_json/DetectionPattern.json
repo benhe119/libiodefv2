@@ -1,0 +1,100 @@
+{
+    "name": "DetectionPattern", 
+    "color": "#CCFF66", 
+    "aggregates": {
+        "DetectionConfiguration": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": "STRING", 
+            "name": "DetectionConfiguration", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A free-form description of this contact.  In the case of a person, this is often the organizational title of the individual."
+        }, 
+        "Software": {
+            "id": 2, 
+            "multiplicity": "1", 
+            "type": null, 
+            "name": "Software", 
+            "description": "A Contact instance contained within another Contact instance inherits the values of the parent(s).  This recursive definition can be used to group common data pertaining to multiple points of contact and is especially useful when listing multiple contacts at the same organization."
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 90, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 3, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }, 
+        "observable-id": {
+            "id": 5, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 91, 
+    "description": "The Contact class describes contact information for organizations and personnel involved in the incident.  This class allows for the naming of the involved party, specifying contact information for them, and identifying their role in the incident. "
+}

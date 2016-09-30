@@ -1,0 +1,95 @@
+{
+  "name": "Alert",
+  "id": "46",
+  "description": "Generally, every time an analyzer detects an event that it has been configured to look for, it sends an Alert message to its manager(s). Depending on the analyzer, an Alert message may correspond to a single detected event or multiple detected events.  Alerts occur asynchronously in response to outside events. ",
+  "color": "#94C600",
+  "childs": {
+    "OverflowAlert": {
+      "id": "12",
+      "name": "OverflowAlert"
+    },
+    "ToolAlert": {
+      "id": "10",
+      "name": "ToolAlert"
+    },
+    "CorrelationAlert": {
+      "id": "11",
+      "name": "CorrelationAlert"
+    }
+  },
+  "aggregates": {
+    "Analyzer": {
+      "name": "Analyzer",
+      "id": "0",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Identification information for the analyzer that originated the alert."
+    },
+    "CreateTime": {
+      "name": "CreateTime",
+      "id": "1",
+      "multiplicity": "1",
+      "type": "DATETIME",
+      "description": "The time the alert was created.  Of the three times that may be provided with an Alert, this is the only one that is required."
+    },
+    "Classification": {
+      "name": "Classification",
+      "id": "2",
+      "multiplicity": "1",
+      "type": null,
+      "description": "The \"name\" of the alert, or other information allowing the manager to determine what it is."
+    },
+    "DetectTime": {
+      "name": "DetectTime",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": "DATETIME",
+      "description": "The time the event(s) leading up to the alert was detected.  In the case of more than one event, the time the first event was detected.  In some circumstances, this may not be the same value as CreateTime."
+    },
+    "AnalyzerTime": {
+      "name": "AnalyzerTime",
+      "id": "4",
+      "multiplicity": "0..1",
+      "type": "DATETIME",
+      "description": "The current time on the analyzer (see Section 6.3)."
+    },
+    "Source": {
+      "name": "Source",
+      "id": "5",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "The source(s) of the event(s) leading up to the alert."
+    },
+    "Target": {
+      "name": "Target",
+      "id": "6",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "The target(s) of the event(s) leading up to the alert."
+    },
+    "Assessment": {
+      "name": "Assessment",
+      "id": "7",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the impact of the event, actions taken by the analyzer in response to it, and the analyzer's confidence in its evaluation."
+    },
+    "AdditionalData": {
+      "name": "AdditionalData",
+      "id": "8",
+      "multiplicity": "0..*",
+      "type": null,
+      "key_listed": true,
+      "description": "Information included by the analyzer that does not fit into the data model.  This may be an atomic piece of data, or a large amount of data provided through an extension to the IDMEF (see Section 5)."
+    }
+  },
+  "attributes": {
+    "messageid": {
+      "name": "messageid",
+      "id": "-1",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "A unique identifier for the alert; see Section 3.2.9."
+    }
+  }
+}

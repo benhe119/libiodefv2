@@ -1,0 +1,59 @@
+{
+  "name": "Location",
+  "id": "10",
+  "description": "The Location class is used to specify the location of an element",
+  "color": "#00CC00",
+  "aggregates": {
+  },
+  "attributes": {
+    "name": {
+      "name": "name",
+      "id": "0",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Custom name for this location"
+    },
+    "latitude": {
+      "name": "latitude",
+      "id": "1",
+      "multiplicity": "Optional",
+      "type": "REAL",
+      "description": "The latitude, with ISO 6709 format"
+    },
+    "longitude": {
+      "name": "longitude",
+      "id": "2",
+      "multiplicity": "Optional",
+      "type": "REAL",
+      "description": "The longitude, with ISO 6709 format"
+    },
+    "altitude": {
+      "name": "altitude",
+      "id": "3",
+      "multiplicity": "Optional",
+      "type": "REAL",
+      "description": "The longitude, with ISO 6709 format"
+    },
+    "country": {
+      "name": "country",
+      "id": "4",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The country"
+    },
+    "city": {
+      "name": "city",
+      "id": "5",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The city"
+    },
+    "postcode": {
+      "name": "postcode",
+      "id": "6",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The postcode"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "BulkObservableFormat", 
+    "color": "#bfbfbf", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "Hash": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Hash", 
+            "description": "A free-form textual description of the event."
+        }
+    }, 
+    "attributes": {}, 
+    "id": 101, 
+    "description": "The EventData class describes a particular event of the incident for a given set of hosts or networks.  This description includes the systems from which the activity originated and those targeted, an assessment of the techniques used by the intruder, the impact of the activity on the organization, and any forensic evidence discovered. "
+}

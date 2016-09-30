@@ -1,0 +1,60 @@
+{
+    "name": "IODEFV2-Document", 
+    "color": "#99CC00", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "Incident": {
+            "id": 1, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "Incident", 
+            "description": "The information related to a single incident."
+        }
+    }, 
+    "attributes": {
+        "lang": {
+            "ident": 140, 
+            "name": "lang", 
+            "multiplicity": "Required", 
+            "type": "ENUM", 
+            "id": 2, 
+            "description": "A valid language code per RFC 4646 [7] constrained by the definition of \"xs:language\".  The interpretation of this code is described in Section 6."
+        }, 
+        "formatid": {
+            "id": 3, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "formatid", 
+            "description": "A free-form string to convey processing instructions to the recipient of the document.  Its semantics must be negotiated out-of-band."
+        }, 
+        "version": {
+            "id": 4, 
+            "multiplicity": "Required", 
+            "type": "STRING", 
+            "name": "version", 
+            "description": "The IODEF specification version number to which this IODEF document conforms.  The value of this attribute MUST be \"1.00\""
+        }, 
+        "private-enum-name": {
+            "id": 5, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "private-enum-name", 
+            "description": null
+        }, 
+        "private-enum-id": {
+            "id": 6, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "private-enum-id", 
+            "description": null
+        }
+    }, 
+    "id": 141, 
+    "description": "The IODEF-Document class is the top level class in the IODEF data model.  All IODEF documents are an instance of this class. "
+}

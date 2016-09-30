@@ -1,0 +1,248 @@
+{
+    "description": "The AdditionalData class serves as an extension mechanism for information not otherwise represented in the data model.  For relatively simple information, atomic data types (e.g., integers, strings) are provided with a mechanism to annotate their meaning. The class can also be used to extend the data model (and the associated Schema) to support proprietary extensions by encapsulating entire XML documents conforming to another Schema (e.g., IDMEF).  A detailed discussion for extending the data model and the schema can be found in Section 5. ", 
+    "color": "#FFCC66", 
+    "attributes": {
+        "restriction": {
+            "ident": 46, 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "name": "restriction", 
+            "multiplicity": "Optional", 
+            "type": "ENUM", 
+            "id": 0, 
+            "description": "This attribute has been defined in Section 3.2."
+        }, 
+        "name": {
+            "id": 1, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "name", 
+            "description": "A free-form description of the element content."
+        }, 
+        "type": {
+            "ident": 47, 
+            "values": [
+                {
+                    "dtype": "integer", 
+                    "rank": "1", 
+                    "keyword": "boolean", 
+                    "description": "The element content is of type BOOLEAN."
+                }, 
+                {
+                    "dtype": "integer", 
+                    "rank": "2", 
+                    "keyword": "byte", 
+                    "description": "The element content is of type BYTE."
+                }, 
+                {
+                    "dtype": "integer", 
+                    "rank": "3", 
+                    "keyword": "character", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "date-time", 
+                    "rank": "4", 
+                    "keyword": "date-time", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "integer", 
+                    "rank": "5", 
+                    "keyword": "integer", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "6", 
+                    "keyword": "portlist", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "real", 
+                    "rank": "7", 
+                    "keyword": "real", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "8", 
+                    "keyword": "string", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "byte[]", 
+                    "rank": "9", 
+                    "keyword": "file", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "byte[]", 
+                    "rank": "10", 
+                    "keyword": "frame", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "byte[]", 
+                    "rank": "11", 
+                    "keyword": "packet", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "byte[]", 
+                    "rank": "12", 
+                    "keyword": "ipv4-packet", 
+                    "description": "The element content is an IPv4 packet encoded as a HEXBIN type."
+                }, 
+                {
+                    "dtype": "byte[]", 
+                    "rank": "13", 
+                    "keyword": "ipv6-packet", 
+                    "description": "The element content is an IPv6 packet encoded as a HEXBIN type."
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "14", 
+                    "keyword": "path", 
+                    "description": "The element content is a file-system path encoded as a STRING type."
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "15", 
+                    "keyword": "url", 
+                    "description": "The element content is of type URL."
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "16", 
+                    "keyword": "csv", 
+                    "description": "The element content is a common separated value (CSV) list per Section 2 of [20] encoded as a STRING type."
+                }, 
+                {
+                    "rank": "17", 
+                    "keyword": "winreg", 
+                    "description": "The element content is a Windows registry key encoded as a STRING type."
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "18", 
+                    "keyword": "xml", 
+                    "description": "The element content is XML (see Section 5)."
+                }, 
+                {
+                    "dtype": "byte[]", 
+                    "rank": "19", 
+                    "keyword": "bytes", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "20", 
+                    "keyword": "ntpstamp", 
+                    "description": null
+                }, 
+                {
+                    "dtype": "string", 
+                    "rank": "21", 
+                    "keyword": "ext-value", 
+                    "description": "An escape value used to extend this attribute. See Section 5.1."
+                }
+            ], 
+            "name": "type", 
+            "multiplicity": "Required", 
+            "type": "ENUM", 
+            "id": 2, 
+            "description": "The data type of the element content.  The permitted values for this attribute are shown below.  The default value is \"string\"."
+        }, 
+        "ext-restriction": {
+            "id": 3, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }, 
+        "formatid": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "formatid", 
+            "description": "An identifier referencing the format and semantics of the element content."
+        }, 
+        "observable-id": {
+            "id": 5, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }, 
+        "meaning": {
+            "id": 6, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "meaning", 
+            "description": "A free-form description of the element content."
+        }, 
+        "ext-dtype": {
+            "id": 7, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-dtype", 
+            "description": "A means by which to extend the dtype attribute.  See Section 5.1."
+        }, 
+        "data": {
+            "id": 8, 
+            "multiplicity": "Required", 
+            "type": "BYTE[]", 
+            "name": "data", 
+            "description": null
+        }
+    }, 
+    "aggregates": {}, 
+    "id": 48, 
+    "name": "AdditionalData"
+}

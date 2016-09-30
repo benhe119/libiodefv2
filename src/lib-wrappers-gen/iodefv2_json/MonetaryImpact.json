@@ -1,0 +1,41 @@
+{
+    "name": "MonetaryImpact", 
+    "color": "#FF5024", 
+    "aggregates": {}, 
+    "attributes": {
+        "currency": {
+            "id": 0, 
+            "multiplicity": "Required", 
+            "type": "STRING", 
+            "name": "currency", 
+            "description": "Defines the currency in which the monetary impact is expressed.  The permitted values are defined in ISO 4217:2001, Codes for the representation of currencies and funds [14].  There is no default value."
+        }, 
+        "severity": {
+            "ident": 53, 
+            "description": "An estimate of the relative severity of the activity.  The permitted values are shown below.  There is no default value.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "low", 
+                    "description": "Low severity"
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "medium", 
+                    "description": "Medium severity"
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "high", 
+                    "description": "High severity"
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 1, 
+            "name": "severity"
+        }
+    }, 
+    "id": 54, 
+    "description": "The MonetaryImpact class describes the financial impact of the activity on an organization.  For example, this impact may consider losses due to the cost of the investigation or recovery, diminished "
+}

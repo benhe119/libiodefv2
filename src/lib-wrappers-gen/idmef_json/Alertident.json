@@ -1,0 +1,25 @@
+{
+  "name": "alertident",
+  "id": "32",
+  "description": "",
+  "color": "#9999FF",
+  "aggregates": {
+  },
+  "attributes": {
+    "alertident": {
+      "name": "alertident",
+      "id": "0",
+      "multiplicity": "1",
+      "type": "STRING",
+      "description": ""
+    },
+    "analyzerid": {
+      "name": "analyzerid",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": ""
+  }
+}
+}
+

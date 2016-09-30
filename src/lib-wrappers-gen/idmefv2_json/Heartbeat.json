@@ -1,0 +1,53 @@
+{
+  "name": "Heartbeat",
+  "id": "59",
+  "description": "Analyzers use Heartbeat messages to indicate their current status to managers.  Heartbeats are intended to be sent in a regular period, say, every ten minutes or every hour.  The receipt of a Heartbeat message from an analyzer indicates to the manager that the analyzer is up and running; lack of a Heartbeat message (or more likely, lack of some number of consecutive Heartbeat messages) indicates that the analyzer or its network connection has failed. ",
+  "color": "#94C600",
+  "aggregates": {
+    "Analyzer": {
+      "name": "Analyzer",
+      "id": "1",
+      "multiplicity": "1..0",
+      "type": null,
+      "description": "Identification information for the analyzer that originated the heartbeat."
+    },
+    "CreateTime": {
+      "name": "CreateTime",
+      "id": "2",
+      "multiplicity": "1",
+      "type": "DATETIME",
+      "description": "The time the heartbeat was created."
+    },
+    "HeartbeatInterval": {
+      "name": "HeartbeatInterval",
+      "id": "4",
+      "multiplicity": "0..1",
+      "type": "INTEGER",
+      "description": "The interval in seconds at which heartbeats are generated."
+    },
+    "AnalyzerTime": {
+      "name": "AnalyzerTime",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": "DATETIME",
+      "description": "The current time on the analyzer (see Section 6.3)."
+    },
+    "AdditionalData": {
+      "name": "AdditionalData",
+      "id": "5",
+      "multiplicity": "0..*",
+      "type": null,
+      "key_listed": true,
+      "description": "Information included by the analyzer that does not fit into the data model.  This may be an atomic piece of data or a large amount of data provided through an extension to the IDMEF (see Section 5)."
+    }
+  },
+  "attributes": {
+    "messageid": {
+      "name": "messageid",
+      "id": "0",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "A unique identifier for the heartbeat; see Section 3.2.9."
+    }
+  }
+}

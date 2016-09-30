@@ -1,0 +1,345 @@
+<!-- ##### SECTION Title ##### -->
+iodefv2-document-write
+
+<!-- ##### SECTION Short_Description ##### -->
+
+Writing IODEFV2 class to a message buffer
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+If you're not willing to use the libiodefv2_client_send_iodefv2() function, because for
+example you want more control over how a message is sent, you can use the iodefv2-document-write
+API to send your message manually.
+</para>
+
+<para>
+The functions defined in this API all take an IODEFV2 object as an argument and
+dump this object in a format suitable for writing it to a socket or a file 
+(covering, for example, convertion from host byte order to network byte order), 
+to the provided #libiodefv2_msgbuf_t buffer.
+</para>
+
+<para>
+The #libiodefv2_msgbuf_t object is just a buffer holding a #libiodefv2_msg_t object. When
+the buffer is full, the user defined function for #libiodefv2_msgbuf_t will be called,
+and the user can write his message using the libiodefv2_msg_write() function.
+</para>
+
+<para>
+<programlisting>
+iodefv2_document_write(message, msgbuf);
+</programlisting>
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+#libiodefv2_msgbuf_t
+#libiodefv2_msg_t
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION iodefv2_additional_data_write ##### -->
+<para>
+
+</para>
+
+@additional_data: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_reference_write ##### -->
+<para>
+
+</para>
+
+@reference: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_classification_write ##### -->
+<para>
+
+</para>
+
+@classification: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_user_id_write ##### -->
+<para>
+
+</para>
+
+@user_id: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_user_write ##### -->
+<para>
+
+</para>
+
+@user: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_address_write ##### -->
+<para>
+
+</para>
+
+@address: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_process_write ##### -->
+<para>
+
+</para>
+
+@process: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_web_service_write ##### -->
+<para>
+
+</para>
+
+@web_service: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_snmp_service_write ##### -->
+<para>
+
+</para>
+
+@snmp_service: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_service_write ##### -->
+<para>
+
+</para>
+
+@service: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_node_write ##### -->
+<para>
+
+</para>
+
+@node: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_source_write ##### -->
+<para>
+
+</para>
+
+@source: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_file_access_write ##### -->
+<para>
+
+</para>
+
+@file_access: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_inode_write ##### -->
+<para>
+
+</para>
+
+@inode: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_checksum_write ##### -->
+<para>
+
+</para>
+
+@checksum: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_file_write ##### -->
+<para>
+
+</para>
+
+@file: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_linkage_write ##### -->
+<para>
+
+</para>
+
+@linkage: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_target_write ##### -->
+<para>
+
+</para>
+
+@target: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_analyzer_write ##### -->
+<para>
+
+</para>
+
+@analyzer: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_alertident_write ##### -->
+<para>
+
+</para>
+
+@alertident: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_impact_write ##### -->
+<para>
+
+</para>
+
+@impact: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_action_write ##### -->
+<para>
+
+</para>
+
+@action: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_confidence_write ##### -->
+<para>
+
+</para>
+
+@confidence: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_assessment_write ##### -->
+<para>
+
+</para>
+
+@assessment: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_tool_alert_write ##### -->
+<para>
+
+</para>
+
+@tool_alert: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_correlation_alert_write ##### -->
+<para>
+
+</para>
+
+@correlation_alert: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_overflow_alert_write ##### -->
+<para>
+
+</para>
+
+@overflow_alert: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_alert_write ##### -->
+<para>
+
+</para>
+
+@alert: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_heartbeat_write ##### -->
+<para>
+
+</para>
+
+@heartbeat: 
+@msg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_document_write ##### -->
+<para>
+
+</para>
+
+@message: 
+@msg: 
+@Returns: 
+
+

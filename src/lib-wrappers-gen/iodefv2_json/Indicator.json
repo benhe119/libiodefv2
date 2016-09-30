@@ -1,0 +1,169 @@
+{
+    "id": 133, 
+    "attributes": {
+        "restriction": {
+            "ident": 132, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 14, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 15, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }
+    }, 
+    "aggregates": {
+        "AlternativeIndicatorID": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AlternativeIndicatorID", 
+            "description": null
+        }, 
+        "Confidence": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Confidence", 
+            "description": null
+        }, 
+        "Reference": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Reference", 
+            "description": null
+        }, 
+        "Observable": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Observable", 
+            "description": null
+        }, 
+        "AdditionalData": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "IndicatorExpression": {
+            "id": 5, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "IndicatorExpression", 
+            "description": null
+        }, 
+        "Contact": {
+            "id": 6, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Contact", 
+            "description": null
+        }, 
+        "NodeRole": {
+            "id": 7, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "NodeRole", 
+            "description": null
+        }, 
+        "StartTime": {
+            "id": 8, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "StartTime", 
+            "description": null
+        }, 
+        "IndicatorID": {
+            "id": 9, 
+            "multiplicity": "1", 
+            "type": null, 
+            "name": "IndicatorID", 
+            "description": null
+        }, 
+        "IndicatorReference": {
+            "id": 10, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "IndicatorReference", 
+            "description": null
+        }, 
+        "ObservableReference": {
+            "id": 11, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "ObservableReference", 
+            "description": null
+        }, 
+        "AttackPhase": {
+            "id": 12, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AttackPhase", 
+            "description": null
+        }, 
+        "EndTime": {
+            "id": 13, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "EndTime", 
+            "description": null
+        }
+    }, 
+    "name": "Indicator", 
+    "description": null
+}

@@ -1,0 +1,66 @@
+{
+    "name": "Telephone", 
+    "color": "#CCFF66", 
+    "aggregates": {
+        "TelephoneNumber": {
+            "id": 0, 
+            "multiplicity": "1", 
+            "type": "PHONE", 
+            "name": "TelephoneNumber", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "type": {
+            "ident": 2, 
+            "description": null, 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "wired", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "mobile", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "fax", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "hotline", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 2, 
+            "name": "type"
+        }, 
+        "ext-type": {
+            "id": 3, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-type", 
+            "description": null
+        }
+    }, 
+    "id": 3, 
+    "description": null
+}

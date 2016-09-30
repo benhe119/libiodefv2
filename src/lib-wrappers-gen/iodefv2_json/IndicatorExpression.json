@@ -1,0 +1,82 @@
+{
+    "name": "IndicatorExpression", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "IndicatorReference": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "IndicatorReference", 
+            "description": null
+        }, 
+        "Observable": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Observable", 
+            "description": null
+        }, 
+        "Confidence": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Confidence", 
+            "description": null
+        }, 
+        "IndicatorExpression": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "IndicatorExpression", 
+            "description": null
+        }, 
+        "AdditionalData": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "operator": {
+            "ident": 130, 
+            "description": null, 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "not", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "and", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "or", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "xor", 
+                    "description": "cc"
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 5, 
+            "name": "operator"
+        }, 
+        "ext-operator": {
+            "id": 6, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-operator", 
+            "description": null
+        }
+    }, 
+    "id": 131, 
+    "description": null
+}

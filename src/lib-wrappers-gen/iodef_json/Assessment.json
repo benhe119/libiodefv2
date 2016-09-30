@@ -1,0 +1,80 @@
+{
+  "name": "Assessment",
+  "id": "24",
+  "description": "The Assessment class describes the technical and non-technical repercussions of the incident on the CSIRT's constituency. ",
+  "color": "#FF5024",
+  "aggregates": {
+    "Impact": {
+      "name": "Impact",
+      "id": "1",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Technical impact of the incident on a network."
+    },
+    "TimeImpact": {
+      "name": "TimeImpact",
+      "id": "4",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Impact of the activity measured with respect to time."
+    },
+    "MonetaryImpact": {
+      "name": "MonetaryImpact",
+      "id": "5",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Impact of the activity measured with respect to financial loss."
+    },
+    "Counter": {
+      "name": "Counter",
+      "id": "6",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "A counter with which to summarize the magnitude of the activity."
+    },
+    "Confidence": {
+      "name": "Confidence",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "An estimate of confidence in the assessment."
+    },
+    "AdditionalData": {
+      "name": "AdditionalData",
+      "id": "2",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "A mechanism by which to extend the data model."
+    }
+  },
+  "attributes": {
+    "occurrence": {
+      "name": "occurrence",
+      "id": "8",
+      "multiplicity": "Optional",
+      "ident": "188",
+      "type": "ENUM",
+      "description": "Specifies whether the assessment is describing actual or potential outcomes.  The default is \"actual\" and is assumed if not specified.",
+      "values": [
+        {
+          "rank": "1",
+          "keyword": "actual",
+          "description": "This assessment describes activity that has occurred."
+        },
+        {
+          "rank": "2",
+          "keyword": "potential",
+          "description": "This assessment describes potential activity that might occur."
+        }
+      ]
+    },
+    "restriction": {
+      "name": "restriction",
+      "id": "7",
+      "multiplicity": "Optional",
+      "ident": "187",
+      "type": "ENUM",
+      "description": "This attribute is defined in Section 3.2."
+    }
+  }
+}

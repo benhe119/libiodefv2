@@ -1,0 +1,15 @@
+This directory contains scripts needed to rebuild IDMEF/IDMEFV2/IODEFV2 wrappers code.
+This needs to be done when JSON file(s) are/is changed.
+
+To rebuild wrappers code, run script generator.py.
+
+
+Two steps to generate a new file "file-name.ext" for "lib_name" library:
+
+1)Write template generate-file-name.ext.mako in templates directory
+2)Open conf.yml and add following lines at the end.
+
+     -
+        src: templates/generate-file-name.ext.mako
+        dst: wanted/destination/lib_name-file-name.ext
+        schema: "lib_name"

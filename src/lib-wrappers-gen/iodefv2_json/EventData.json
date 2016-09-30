@@ -1,0 +1,177 @@
+{
+    "name": "EventData", 
+    "color": "#bfbfbf", 
+    "aggregates": {
+        "DetectTime": {
+            "id": 0, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "DetectTime", 
+            "description": "The time the event was detected."
+        }, 
+        "AdditionalData": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": "An extension mechanism for data not explicitly represented in the data model."
+        }, 
+        "ReportTime": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "ReportTime", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A free-form textual description of the event."
+        }, 
+        "Flow": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Flow", 
+            "description": "A description of the systems or networks involved."
+        }, 
+        "Expectation": {
+            "id": 5, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Expectation", 
+            "description": "The expected action to be performed by the recipient for the described event."
+        }, 
+        "Record": {
+            "id": 6, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Record", 
+            "description": "Supportive data (e.g., log files) that provides additional information about the event."
+        }, 
+        "Contact": {
+            "id": 7, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Contact", 
+            "description": "Contact information for the parties involved in the event."
+        }, 
+        "StartTime": {
+            "id": 8, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "StartTime", 
+            "description": "The time the event started."
+        }, 
+        "EndTime": {
+            "id": 9, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "EndTime", 
+            "description": "The time the event ended."
+        }, 
+        "Assessment": {
+            "id": 10, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Assessment", 
+            "description": "The impact of the event on the target and the actions taken."
+        }, 
+        "Method": {
+            "id": 11, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Method", 
+            "description": "The technique used by the intruder in the event."
+        }, 
+        "RecoveryTime": {
+            "id": 12, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "RecoveryTime", 
+            "description": null
+        }, 
+        "Discovery": {
+            "id": 13, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Discovery", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 126, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 14, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 15, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }, 
+        "observable-id": {
+            "id": 16, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 127, 
+    "description": "The EventData class describes a particular event of the incident for a given set of hosts or networks.  This description includes the systems from which the activity originated and those targeted, an assessment of the techniques used by the intruder, the impact of the activity on the organization, and any forensic evidence discovered. "
+}

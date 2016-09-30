@@ -1,0 +1,126 @@
+<!-- ##### SECTION Title ##### -->
+libiodefv2-msgbuf
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### TYPEDEF libiodefv2_msgbuf_t ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM libiodefv2_msgbuf_flags_t ##### -->
+<para>
+
+</para>
+
+@LIBIODEFV2_MSGBUF_FLAGS_ASYNC: 
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_new ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_destroy ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_mark_end ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_set ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@tag: 
+@len: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_get_msg ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_set_callback ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@send_msg: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_set_data ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@data: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_get_data ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_set_flags ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@flags: 
+
+
+<!-- ##### FUNCTION libiodefv2_msgbuf_get_flags ##### -->
+<para>
+
+</para>
+
+@msgbuf: 
+@Returns: 
+
+

@@ -1,0 +1,31 @@
+{
+    "name": "Certificate", 
+    "color": "#ffcc00", 
+    "aggregates": {
+        "X509Data": {
+            "id": 0, 
+            "multiplicity": "1", 
+            "type": "BYTE[]", 
+            "name": "X509Data", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "STRING", 
+            "name": "Description", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "observable-id": {
+            "id": 2, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 4, 
+    "description": "The RecordData class groups log or audit data from a given sensor (e.g., IDS, firewall log) and provides a way to annotate the output. "
+}

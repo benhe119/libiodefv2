@@ -1,0 +1,36 @@
+{
+  "name": "Transaction",
+  "id": "100",
+  "description": "The Transaction class contains specific information about the data exchange during the attack.",
+  "aggregates": {
+    "src": {
+      "name": "src",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "Source of the attack (network vision)"
+    },
+    "dst": {
+      "name": "dst",
+      "id": "2",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "Target of the attack (network vision)"
+    },
+    "Observable": {
+      "name": "Observable",
+      "id": "2",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Information included by the analyzer that does not fit into the data model.  This may be an atomic piece of data, or a large amount of data provided through an extension to the IDMEF (see Section 5)."
+    }
+  },
+  "attributes": {
+    "meaning": {
+      "name": "meaning",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Meaning of this transaction"
+    }
+  }
+}

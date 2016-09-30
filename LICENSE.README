@@ -1,0 +1,10 @@
+This directory and its children contain LibIODEFV2, a library for using
+the IODEFV2 format.
+
+Copyright (C) 2005-2016 CS-SI. All rights reserved.
+
+You may use LibIODEFV2 under the terms of the GPL v2, as appearing in the file COPYING.
+If the file COPYING is missing, you can obtain a copy of the GPL v2 from the
+Free Software Foundation Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Please also read the information in the file HACKING.README.

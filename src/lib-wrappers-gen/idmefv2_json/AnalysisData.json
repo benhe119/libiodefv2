@@ -1,0 +1,23 @@
+{
+  "name": "AnalysisData",
+  "id": "47",
+  "description": "The AnalysisData Class group the element use during this attack",
+  "aggregates": {
+    "Observable": {
+      "name": "Observable",
+      "id": "0",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Observable exchange during the attack"
+    },
+    "OriginalData": {
+      "name": "OriginalData",
+      "id": "1",
+      "multiplicity": "0..*",
+      "type": "STRING",
+      "description": "List of the origin of the analysis (log, pcap, file, ...)"
+    }
+  },
+  "attributes": {
+  }
+}

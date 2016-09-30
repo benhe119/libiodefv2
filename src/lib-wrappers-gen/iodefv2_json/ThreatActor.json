@@ -1,0 +1,99 @@
+{
+    "id": 64, 
+    "attributes": {
+        "restriction": {
+            "ident": 63, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 4, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 5, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }
+    }, 
+    "aggregates": {
+        "URL": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": "URL", 
+            "name": "URL", 
+            "description": "A URL to activity related to this incident."
+        }, 
+        "ThreatActorID": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "STRING", 
+            "name": "ThreatActorID", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }, 
+        "AdditionalData": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }
+    }, 
+    "name": "ThreatActor", 
+    "description": ""
+}

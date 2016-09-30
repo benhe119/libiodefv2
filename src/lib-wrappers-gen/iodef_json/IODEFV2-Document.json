@@ -1,0 +1,39 @@
+{
+  "name": "Message",
+  "id": "35",
+  "description": "The IODEFV2-Document class is the top level class in the IODEFV2 data model.  All IODEFV2 documents are an instance of this class. ",
+  "color": "#99CC00",
+  "aggregates": {
+    "Incident": {
+      "name": "Incident",
+      "id": "1",
+      "multiplicity": "1..*",
+      "type": null,
+      "description": "The information related to a single incident."
+    }
+  },
+  "attributes": {
+    "version": {
+      "name": "version",
+      "id": "4",
+      "multiplicity": "Required",
+      "type": "STRING",
+      "description": "The IODEFV2 specification version number to which this IODEFV2 document conforms.  The value of this attribute MUST be \"1.00\""
+    },
+    "lang": {
+      "name": "lang",
+      "id": "2",
+      "multiplicity": "Required",
+      "ident": "199",
+      "type": "ENUM",
+      "description": "A valid language code per RFC 4646 [7] constrained by the definition of \"xs:language\".  The interpretation of this code is described in Section 6."
+    },
+    "formatid": {
+      "name": "formatid",
+      "id": "3",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "A free-form string to convey processing instructions to the recipient of the document.  Its semantics must be negotiated out-of-band."
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Impact",
+  "id": "36",
+  "description": "The Impact class is used to provide the analyzer's assessment of the impact of the event on the target(s).  It is represented in the IDMEF DTD as follows: ",
+  "color": "#FF5024",
+  "aggregates": {
+  },
+  "attributes": {
+    "severity": {
+      "name": "severity",
+      "id": "0",
+      "multiplicity": "0..1",
+      "ident":"33",
+      "type": "ENUM",
+      "description": "Section 10.)",
+      "values": [
+        {
+          "rank": "-1",
+          "keyword": "error",
+          "description": ""
+        },
+        {
+          "rank": "1",
+          "keyword": "info",
+          "description": "Alert represents informational activity  "
+        },
+        {
+          "rank": "2",
+          "keyword": "low",
+          "description": "Low severity  "
+        },
+        {
+          "rank": "3",
+          "keyword": "medium",
+          "description": "Medium severity  "
+        },
+        {
+          "rank": "4",
+          "keyword": "high",
+          "description": "High severity"
+        }
+      ]
+    },
+    "completion": {
+      "name": "completion",
+      "id": "1",
+      "multiplicity": "0..1",
+      "ident":"34",
+      "type": "ENUM",
+      "description": "Section 10.)",
+      "values": [
+        {
+          "rank": "-1",
+          "keyword": "error",
+          "description": ""
+        },
+        {
+          "rank": "1",
+          "keyword": "failed",
+          "description": "The attempt was not successful"
+        },
+        {
+          "rank": "2",
+          "keyword": "succeeded",
+          "description": "The attempt succeeded"
+        }
+      ]
+    },
+    "type": {
+      "name": "type",
+      "id": "2",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "description": "value is \"other\".  (See also Section 10.)",
+      "values": [
+        {
+          "rank": "-1",
+          "keyword": "error",
+          "description": ""
+        },
+	    {
+          "rank": "0",
+          "keyword": "other",
+          "description": "Anything not in one of the above categories"
+        },
+        {
+          "rank": "1",
+          "keyword": "admin",
+          "description": "Administrative privileges were attempted or obtained"
+        },
+        {
+          "rank": "2",
+          "keyword": "dos",
+          "description": "A denial of service was attempted or completed"
+        },
+        {
+          "rank": "3",
+          "keyword": "file",
+          "description": "An action on a file was attempted or completed"
+        },
+        {
+          "rank": "4",
+          "keyword": "recon",
+          "description": "A reconnaissance probe was attempted or completed"
+        },
+        {
+          "rank": "5",
+          "keyword": "user",
+          "description": "User privileges were attempted or obtained"
+        }
+      ]
+    },
+     "description": {
+      "name": "description",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": ""
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "name": "Hash", 
+    "color": "#ffcc00", 
+    "aggregates": {
+        "DigestValue": {
+            "id": 0, 
+            "multiplicity": "1", 
+            "type": "STRING", 
+            "name": "DigestValue", 
+            "description": null
+        }, 
+        "DigestMethod": {
+            "id": 1, 
+            "multiplicity": "1", 
+            "type": "STRING", 
+            "name": "DigestMethod", 
+            "description": null
+        }, 
+        "CanonicalizationMethod": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "CanonicalizationMethod", 
+            "description": null
+        }, 
+        "Software": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Software", 
+            "description": null
+        }
+    }, 
+    "attributes": {}, 
+    "id": 89, 
+    "description": "The RecordData class groups log or audit data from a given sensor (e.g., IDS, firewall log) and provides a way to annotate the output. "
+}

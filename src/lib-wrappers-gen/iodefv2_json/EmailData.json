@@ -1,0 +1,94 @@
+{
+    "name": "EmailData", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "EmailHeaders": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "EmailHeaders", 
+            "description": null
+        }, 
+        "SignatureData": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "SignatureData", 
+            "description": null
+        }, 
+        "EmailSubject": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "EmailSubject", 
+            "description": null
+        }, 
+        "EmailX-Mailer": {
+            "id": 4, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "EmailX-Mailer", 
+            "description": null
+        }, 
+        "HashData": {
+            "id": 5, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "HashData", 
+            "description": null
+        }, 
+        "EmailFrom": {
+            "id": 6, 
+            "multiplicity": "0..1", 
+            "type": "EMAIL", 
+            "name": "EmailFrom", 
+            "description": null
+        }, 
+        "ApplicationHeader": {
+            "id": 7, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "ApplicationHeader", 
+            "description": null
+        }, 
+        "EmailBody": {
+            "id": 8, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "EmailBody", 
+            "description": null
+        }, 
+        "EmailMessage": {
+            "id": 9, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "EmailMessage", 
+            "description": null
+        }, 
+        "EmailTo": {
+            "id": 10, 
+            "multiplicity": "0..*", 
+            "type": "EMAIL", 
+            "name": "EmailTo", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "observable-id": {
+            "id": 11, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 109, 
+    "description": null
+}

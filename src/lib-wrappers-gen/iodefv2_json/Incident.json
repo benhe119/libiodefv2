@@ -1,0 +1,244 @@
+{
+    "name": "Incident", 
+    "color": "#99CC00", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": "Mechanism by which to extend the data model."
+        }, 
+        "History": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "History", 
+            "description": "A log of significant events or actions that occurred during the course of handling the incident."
+        }, 
+        "StartTime": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "StartTime", 
+            "description": "The time the incident started."
+        }, 
+        "AlternativeID": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "AlternativeID", 
+            "description": "The incident tracking numbers used by other CSIRTs to refer to the incident described in the document."
+        }, 
+        "Contact": {
+            "id": 4, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "Contact", 
+            "description": "Contact information for the parties involved in the incident."
+        }, 
+        "RelatedActivity": {
+            "id": 5, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "RelatedActivity", 
+            "description": "The incident tracking numbers of related incidents."
+        }, 
+        "EndTime": {
+            "id": 6, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "EndTime", 
+            "description": "The time the incident ended."
+        }, 
+        "GenerationTime": {
+            "id": 7, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "GenerationTime", 
+            "description": "The time the incident started."
+        }, 
+        "Assessment": {
+            "id": 8, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "Assessment", 
+            "description": "A characterization of the impact of the incident."
+        }, 
+        "Method": {
+            "id": 9, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Method", 
+            "description": "The techniques used by the intruder in the incident."
+        }, 
+        "RecoveryTime": {
+            "id": 10, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "RecoveryTime", 
+            "description": null
+        }, 
+        "Discovery": {
+            "id": 11, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Discovery", 
+            "description": null
+        }, 
+        "DetectTime": {
+            "id": 12, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "DetectTime", 
+            "description": "The time the incident was first detected."
+        }, 
+        "ReportTime": {
+            "id": 13, 
+            "multiplicity": "1..1", 
+            "type": "DATETIME", 
+            "name": "ReportTime", 
+            "description": "The time the incident was reported."
+        }, 
+        "Description": {
+            "id": 14, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A free-form textual description of the incident."
+        }, 
+        "IndicatorData": {
+            "id": 15, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "IndicatorData", 
+            "description": null
+        }, 
+        "EventData": {
+            "id": 16, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "EventData", 
+            "description": "Description of the events comprising the incident."
+        }, 
+        "IncidentID": {
+            "id": 17, 
+            "multiplicity": "1..1", 
+            "type": null, 
+            "name": "IncidentID", 
+            "description": "An incident tracking number assigned to this incident by the CSIRT that generated the IODEF document."
+        }
+    }, 
+    "attributes": {
+        "status": {
+            "ident": 135, 
+            "description": "", 
+            "multiplicity": "Required", 
+            "values": [], 
+            "type": "ENUM", 
+            "id": 18, 
+            "name": "status"
+        }, 
+        "lang": {
+            "ident": 136, 
+            "name": "lang", 
+            "multiplicity": "Optional", 
+            "type": "ENUM", 
+            "id": 19, 
+            "description": "A valid language code per RFC 4646 [7] constrained by the definition of \"xs:language\".  The interpretation of this code is described in Section 6."
+        }, 
+        "ext-purpose": {
+            "id": 20, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-purpose", 
+            "description": "A means by which to extend the purpose attribute.  See Section 5.1."
+        }, 
+        "purpose": {
+            "ident": 137, 
+            "description": "The purpose attribute represents the reason why the IODEF document was created.  It is closely related to the Expectation class (Section 3.13).  This attribute is defined as an enumerated list:", 
+            "multiplicity": "Required", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "traceback", 
+                    "description": "The document was sent for trace-back purposes."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "mitigation", 
+                    "description": "The document was sent to request aid in mitigating the described activity."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "reporting", 
+                    "description": "The document was sent to comply with reporting requirements."
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "watch", 
+                    "description": "The document was sent for purposes specified in the Expectation class."
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "other", 
+                    "description": "An escape value used to extend this attribute. See Section 5.1."
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "ext-value", 
+                    "description": "An escape value used to extend this attribute. See Section 5.1."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 21, 
+            "name": "purpose"
+        }, 
+        "ext-status": {
+            "id": 22, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-status", 
+            "description": null
+        }, 
+        "restriction": {
+            "ident": 138, 
+            "description": "This attribute indicates the disclosure guidelines to which the sender expects the recipient to adhere for the information represented in this class and its children.  This guideline provides no security since there are no specified technical means to ensure that the recipient of the document handles the information as the sender requested.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": "There are no restrictions placed in the information."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "need-to-know", 
+                    "description": "The information may be shared with other parties that are involved in the incident as determined by the recipient of this document (e.g., multiple victim sites can be informed of each other)."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "private", 
+                    "description": "The information may not be shared."
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "default", 
+                    "description": "The information can be shared according to an information disclosure policy pre-arranged by the communicating parties."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 23, 
+            "name": "restriction"
+        }, 
+        "observable-id": {
+            "id": 24, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 139, 
+    "description": "Every incident is represented by an instance of the Incident class. This class provides a standardized representation for commonly exchanged incident data. "
+}

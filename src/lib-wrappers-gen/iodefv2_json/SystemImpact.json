@@ -1,0 +1,199 @@
+{
+    "name": "SystemImpact", 
+    "color": "#FF5024", 
+    "aggregates": {
+        "Description": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "completion": {
+            "ident": 31, 
+            "description": "An indication whether the described activity was successful.  The permitted values are shown below.  There is no default value.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "failed", 
+                    "description": "The attempted activity was not successful."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "succeeded", 
+                    "description": "The attempted activity succeeded."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 1, 
+            "name": "completion"
+        }, 
+        "type": {
+            "ident": 32, 
+            "description": null, 
+            "multiplicity": "Required", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "takeover-account", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "takeover-service", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "takeover-system", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "cps-manipulation", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "cps-damage", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "availability-data", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "availability-account", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "availability-service", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "availability-system", 
+                    "description": null
+                }, 
+                {
+                    "rank": "10", 
+                    "keyword": "damaged-system", 
+                    "description": null
+                }, 
+                {
+                    "rank": "11", 
+                    "keyword": "damaged-data", 
+                    "description": null
+                }, 
+                {
+                    "rank": "12", 
+                    "keyword": "breach-proprietary", 
+                    "description": null
+                }, 
+                {
+                    "rank": "13", 
+                    "keyword": "breach-privacy", 
+                    "description": null
+                }, 
+                {
+                    "rank": "14", 
+                    "keyword": "breach-credential", 
+                    "description": null
+                }, 
+                {
+                    "rank": "15", 
+                    "keyword": "breach-configuration", 
+                    "description": null
+                }, 
+                {
+                    "rank": "16", 
+                    "keyword": "integrity-data", 
+                    "description": null
+                }, 
+                {
+                    "rank": "17", 
+                    "keyword": "integrity-configuration", 
+                    "description": null
+                }, 
+                {
+                    "rank": "18", 
+                    "keyword": "integrity-hardware", 
+                    "description": null
+                }, 
+                {
+                    "rank": "19", 
+                    "keyword": "traffic-redirection", 
+                    "description": null
+                }, 
+                {
+                    "rank": "20", 
+                    "keyword": "monitoring-traffic", 
+                    "description": null
+                }, 
+                {
+                    "rank": "21", 
+                    "keyword": "monitoring-host", 
+                    "description": null
+                }, 
+                {
+                    "rank": "22", 
+                    "keyword": "policy", 
+                    "description": null
+                }, 
+                {
+                    "rank": "23", 
+                    "keyword": "unknown", 
+                    "description": null
+                }, 
+                {
+                    "rank": "24", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 2, 
+            "name": "type"
+        }, 
+        "severity": {
+            "ident": 33, 
+            "description": "An estimate of the relative severity of the activity. The permitted values are shown below.  There is no default value.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "low", 
+                    "description": "Low severity"
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "medium", 
+                    "description": "Medium severity"
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "high", 
+                    "description": "High severity"
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 3, 
+            "name": "severity"
+        }, 
+        "ext-type": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-type", 
+            "description": null
+        }
+    }, 
+    "id": 34, 
+    "description": "The Impact class allows for categorizing and describing the technical impact of the incident on the network of an organization."
+}

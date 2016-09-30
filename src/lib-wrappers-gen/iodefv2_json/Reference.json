@@ -1,0 +1,38 @@
+{
+    "name": "Reference",
+    "color": "#996633",
+    "aggregates": {
+        "URL": {
+            "id": 0,
+            "multiplicity": "0..*",
+            "type": "URL",
+            "name": "URL",
+            "description": "A URL associated with the reference."
+        },
+        "Description": {
+            "id": 1,
+            "multiplicity": "0..*",
+            "type": "ML_STRING",
+            "name": "Description",
+            "description": "A free-form text description of this reference."
+        },
+        "ReferenceName": {
+            "id": 2,
+            "multiplicity": "1..1",
+            "type": "ML_STRING",
+            "name": "ReferenceName",
+            "description": "Name of the reference."
+        }
+    },
+    "attributes": {
+        "observable-id": {
+            "id": 3,
+            "multiplicity": "Optional",
+            "type": "ID",
+            "name": "observable-id",
+            "description": null
+        }
+    },
+    "id": 20,
+    "description": "The Reference class is a reference to a vulnerability, IDS alert, malware sample, advisory, or attack technique.  A reference consists of a name, a URL to this reference, and an optional description. "
+}

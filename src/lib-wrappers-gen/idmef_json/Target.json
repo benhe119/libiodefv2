@@ -1,0 +1,88 @@
+{
+  "name": "Target",
+  "id": "30",
+  "description": "The Target class contains information about the possible target(s) of the event(s) that generated an alert.  An event may have more than one target (e.g., in the case of a port sweep). ",
+  "color": "#284F9F",
+  "aggregates": {
+    "Node": {
+      "name": "Node",
+      "id": "0",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the host or device at which the event(s) (network address, network name, etc.) is being directed."
+    },
+    "User": {
+      "name": "User",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the user at which the event(s) is being directed."
+    },
+    "Process": {
+      "name": "Process",
+      "id": "2",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the process at which the event(s) is being directed."
+    },
+    "Service": {
+      "name": "Service",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the network service involved in the event(s)."
+    },
+    "File": {
+      "name": "File",
+      "id": "4",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Information about file(s) involved in the event(s)."
+    }
+  },
+  "attributes": {
+    "ident": {
+      "name": "ident",
+      "id": "5",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "A unique identifier for this target, see Section 3.2.9."
+    },
+    "decoy": {
+      "name": "decoy",
+      "id": "6",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "description": "An indication of whether the target is, as far as the analyzer can determine, a decoy.  The permitted values for this attribute are shown below.  The default value is \"unknown\".  (See also Section 10.)",
+      "values": [
+        {
+          "rank": "-1",
+          "keyword": "error",
+          "description": ""
+        },
+        {
+          "rank": "0",
+          "keyword": "unknown",
+          "description": "Accuracy of target information unknown"
+        },
+        {
+          "rank": "1",
+          "keyword": "yes",
+          "description": "Target is believed to be a decoy"
+        },
+        {
+          "rank": "2",
+          "keyword": "no",
+          "description": "Target is believed to be \"real\""
+        }
+      ]
+    },
+    "interface": {
+      "name": "interface",
+      "id": "7",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "May be used by a network-based analyzer with multiple interfaces to indicate which interface this target was seen on."
+    }
+  }
+}

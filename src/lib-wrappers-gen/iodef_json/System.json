@@ -1,0 +1,139 @@
+{
+  "name": "System",
+  "id": "31",
+  "description": "The System class describes a system or network involved in an event. The systems or networks represented by this class are categorized according to the role they played in the incident through the category attribute.  The value of this category attribute dictates the semantics of the aggregated classes in the System class.  If the category attribute has a value of \"source\", then the aggregated classes denote the machine and service from which the activity is originating.  With a category attribute value of \"target\" or \"intermediary\", then the machine or service is the one targeted in the activity.  A value of \"sensor\" dictates that this System was part of an instrumentation to monitor the network. ",
+  "color": "#284f9f",
+  "aggregates": {
+    "Node": {
+      "name": "Node",
+      "id": "1",
+      "multiplicity": "1",
+      "type": null,
+      "description": "A host or network involved in the incident."
+    },
+    "Service": {
+      "name": "Service",
+      "id": "4",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "A network service running on the system."
+    },
+    "OperatingSystem": {
+      "name": "OperatingSystem",
+      "id": "6",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "The operating system running on the system."
+    },
+    "Counter": {
+      "name": "Counter",
+      "id": "5",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "A counter with which to summarize properties of this host or network."
+    },
+    "Description": {
+      "name": "Description",
+      "id": "3",
+      "multiplicity": "0..*",
+      "type": "ML_STRING",
+      "description": "A free-form text description of the System."
+    },
+    "AdditionalData": {
+      "name": "AdditionalData",
+      "id": "2",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "A mechanism by which to extend the data model."
+    }
+  },
+  "attributes": {
+    "restriction": {
+      "name": "restriction",
+      "id": "8",
+      "multiplicity": "Optional",
+      "ident": "193",
+      "type": "ENUM",
+      "description": "This attribute is defined in Section 3.2."
+    },
+    "category": {
+      "name": "category",
+      "id": "7",
+      "multiplicity": "Required",
+      "ident": "192",
+      "type": "ENUM",
+      "description": "Classifies the role the host or network played in the incident.  The possible values are:",
+      "values": [
+        {
+          "rank": "1",
+          "keyword": "source",
+          "description": "The System was the source of the event."
+        },
+        {
+          "rank": "2",
+          "keyword": "target",
+          "description": "The System was the target of the event."
+        },
+        {
+          "rank": "3",
+          "keyword": "intermediate",
+          "description": "The System was an intermediary in the event."
+        },
+        {
+          "rank": "4",
+          "keyword": "sensor",
+          "description": "The System was a sensor monitoring the event."
+        },
+        {
+          "rank": "5",
+          "keyword": "infrastructure",
+          "description": "The System was an infrastructure node of IODEFV2 document exchange."
+        },
+        {
+          "rank": "6",
+          "keyword": "ext-value",
+          "description": "An escape value used to extend this attribute. See Section 5.1."
+        }
+      ]
+    },
+    "ext-category": {
+      "name": "ext-category",
+      "id": "9",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "A means by which to extend the category attribute.  See Section 5.1."
+    },
+    "interface": {
+      "name": "interface",
+      "id": "11",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Specifies the interface on which the event(s) on this System originated.  If the Node class specifies a network rather than a host, this attribute has no meaning."
+    },
+    "spoofed": {
+      "name": "spoofed",
+      "id": "10",
+      "multiplicity": "Optional",
+      "ident": "194",
+      "type": "ENUM",
+      "description": "An indication of confidence in whether this System was the true target or attacking host.  The permitted values for this attribute are shown below.  The default value is \"unknown\".",
+      "values": [
+        {
+          "rank": "1",
+          "keyword": "unknown",
+          "description": "The accuracy of the category attribute value is unknown."
+        },
+        {
+          "rank": "2",
+          "keyword": "yes",
+          "description": "The category attribute value is probably incorrect.  In the case of a source, the System is likely a decoy; with a target, the System was likely not the intended victim."
+        },
+        {
+          "rank": "3",
+          "keyword": "no",
+          "description": "The category attribute value is believed to be correct."
+        }
+      ]
+    }
+  }
+}

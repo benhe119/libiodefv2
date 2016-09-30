@@ -1,0 +1,38 @@
+{
+  "name": "CorrelationAlert",
+  "id": "46",
+  "description": "The CorrelationAlert class carries additional information related to the correlation of alert information.  It is intended to group one or more previously-sent alerts together, to say \"these alerts are all related\". ",
+  "color": "#94C600",
+  "aggregates": {
+    "name": {
+      "name": "name",
+      "id": "0",
+      "multiplicity": "1",
+      "type": "STRING",
+      "description": "The reason for grouping the alerts together, for example, a particular correlation method."
+    },
+    "duration": {
+      "name": "duration",
+      "id": "2",
+      "multiplicity": "0..1",
+      "type": "INTEGER",
+      "description": "Duration of the event in second"
+    },
+    "counter": {
+      "name": "counter",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": "INTEGER",
+      "description": "nb of identical alert. Use it with the duration field"
+    },
+    "alertident": {
+      "name": "alertident",
+      "id": "1",
+      "multiplicity": "1..*",
+      "type": "STRING",
+      "description": "The list of alert identifiers that are related to this alert.  Because alert identifiers are only unique across the alerts sent by a single analyzer, the optional \"analyzerid\" attribute of \"alertident\" should be used to identify the analyzer that a particular alert came from.  If the \"analyzerid\" is not provided, the alert is assumed to have come from the same analyzer that is sending the CorrelationAlert."
+    }
+  },
+  "attributes": {
+  }
+}

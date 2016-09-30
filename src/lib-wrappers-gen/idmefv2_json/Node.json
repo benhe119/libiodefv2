@@ -1,0 +1,38 @@
+{
+  "name": "Node",
+  "id": "27",
+  "description": "The Node class is used to identify hosts and other network devices (routers, switches, etc.). ",
+  "color": "#00CC00",
+  "aggregates": {
+    "Location": {
+      "name": "Location",
+      "id": "0",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "The location of the equipment."
+    },
+    "NodeName": {
+      "name": "NodeName",
+      "id": "1",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "The name of the equipment.  This information MUST be provided if no Address information is given."
+    },
+    "Interface": {
+      "name": "Interface",
+      "id": "2",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": null
+    }
+  },
+  "attributes": {
+    "ident": {
+      "name": "ident",
+      "id": "3",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "A unique identifier for the node; see Section 3.2.9."
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<!-- ##### SECTION Title ##### -->
+libiodefv2-hash
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### TYPEDEF libiodefv2_hash_t ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION libiodefv2_hash_new ##### -->
+<para>
+
+</para>
+
+@hash: 
+@hash_func: 
+@key_cmp_func: 
+@key_destroy_func: 
+@value_destroy_func: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_hash_new2 ##### -->
+<para>
+
+</para>
+
+@hash: 
+@size: 
+@hash_func: 
+@key_cmp_func: 
+@key_destroy_func: 
+@value_destroy_func: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_hash_destroy ##### -->
+<para>
+
+</para>
+
+@hash: 
+
+
+<!-- ##### FUNCTION libiodefv2_hash_set ##### -->
+<para>
+
+</para>
+
+@hash: 
+@key: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_hash_get ##### -->
+<para>
+
+</para>
+
+@hash: 
+@key: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_hash_elem_destroy ##### -->
+<para>
+
+</para>
+
+@hash: 
+@key: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_hash_iterate ##### -->
+<para>
+
+</para>
+
+@hash: 
+@cb: 
+
+

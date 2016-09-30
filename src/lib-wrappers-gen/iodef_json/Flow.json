@@ -1,0 +1,17 @@
+{
+  "name": "Flow",
+  "id": "32",
+  "description": "The Flow class groups related the source and target hosts. ",
+  "color": "#284f9f",
+  "aggregates": {
+    "System": {
+      "name": "System",
+      "id": "1",
+      "multiplicity": "1..*",
+      "type": null,
+      "description": "A host or network involved in an event."
+    }
+  },
+  "attributes": {
+  }
+}

@@ -1,0 +1,336 @@
+<!-- ##### SECTION Title ##### -->
+libiodefv2-plugin
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO lt_preloaded_symbols ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO LIBIODEFV2_PLUGIN_API_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### TYPEDEF libiodefv2_plugin_entry_t ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF libiodefv2_plugin_instance_t ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO LIBIODEFV2_PLUGIN_GENERIC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT libiodefv2_plugin_generic_t ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO LIBIODEFV2_PLUGIN_SET_PRELOADED_SYMBOLS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO LIBIODEFV2_PLUGIN_OPTION_DECLARE_STRING_CB ##### -->
+<para>
+
+</para>
+
+@prefix: 
+@type: 
+@name: 
+
+
+<!-- ##### MACRO libiodefv2_plugin_get_name ##### -->
+<para>
+
+</para>
+
+@p: 
+
+
+<!-- ##### MACRO libiodefv2_plugin_set_name ##### -->
+<para>
+
+</para>
+
+@p: 
+@str: 
+
+
+<!-- ##### MACRO libiodefv2_plugin_set_destroy_func ##### -->
+<para>
+
+</para>
+
+@p: 
+@func: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_entry_set_plugin ##### -->
+<para>
+
+</para>
+
+@pe: 
+@pl: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_set_activation_option ##### -->
+<para>
+
+</para>
+
+@pe: 
+@opt: 
+@commit: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_subscribe ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_unsubscribe ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_new_instance ##### -->
+<para>
+
+</para>
+
+@pi: 
+@plugin: 
+@name: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_search_by_name ##### -->
+<para>
+
+</para>
+
+@head: 
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_search_instance_by_name ##### -->
+<para>
+
+</para>
+
+@head: 
+@pname: 
+@iname: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_set_data ##### -->
+<para>
+
+</para>
+
+@pi: 
+@data: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_get_data ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_set_plugin_data ##### -->
+<para>
+
+</para>
+
+@pi: 
+@data: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_get_plugin_data ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_get_name ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_get_plugin ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_load_from_dir ##### -->
+<para>
+
+</para>
+
+@head: 
+@dirname: 
+@symbol: 
+@ptr: 
+@subscribe: 
+@unsubscribe: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_add ##### -->
+<para>
+
+</para>
+
+@pi: 
+@h: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_del ##### -->
+<para>
+
+</para>
+
+@pi: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_compute_time ##### -->
+<para>
+
+</para>
+
+@pi: 
+@start: 
+@end: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_call_commit_func ##### -->
+<para>
+
+</para>
+
+@pi: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_instance_has_commit_func ##### -->
+<para>
+
+</para>
+
+@pi: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_set_preloaded_symbols ##### -->
+<para>
+
+</para>
+
+@symlist: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_get_next ##### -->
+<para>
+
+</para>
+
+@head: 
+@iter: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_plugin_unload ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### MACRO libiodefv2_plugin_compute_stats ##### -->
+<para>
+
+</para>
+
+@pi: 
+@func: 
+
+
+<!-- ##### MACRO libiodefv2_plugin_run ##### -->
+<para>
+
+</para>
+
+@pi: 
+@type: 
+@member: 
+@...: 
+
+

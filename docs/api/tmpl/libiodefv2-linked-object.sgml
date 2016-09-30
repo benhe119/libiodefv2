@@ -1,0 +1,43 @@
+<!-- ##### SECTION Title ##### -->
+libiodefv2-linked-object
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO LIBIODEFV2_LINKED_OBJECT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT libiodefv2_linked_object_t ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO libiodefv2_linked_object_get_object ##### -->
+<para>
+
+</para>
+
+@object: 
+
+

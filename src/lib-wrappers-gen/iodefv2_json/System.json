@@ -1,0 +1,291 @@
+{
+    "name": "System", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "Node": {
+            "id": 0, 
+            "multiplicity": "1..1", 
+            "type": null, 
+            "name": "Node", 
+            "description": "A host or network involved in the incident."
+        }, 
+        "AdditionalData": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": "A mechanism by which to extend the data model."
+        }, 
+        "Description": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A free-form text description of the System."
+        }, 
+        "Service": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Service", 
+            "description": "A network service running on the system."
+        }, 
+        "AssetID": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": "STRING", 
+            "name": "AssetID", 
+            "description": null
+        }, 
+        "Counter": {
+            "id": 5, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Counter", 
+            "description": "A counter with which to summarize properties of this host or network."
+        }, 
+        "NodeRole": {
+            "id": 6, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "NodeRole", 
+            "description": null
+        }, 
+        "Software": {
+            "id": 7, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Software", 
+            "description": "The operating system running on the system."
+        }
+    }, 
+    "attributes": {
+        "category": {
+            "ident": 115, 
+            "description": "Classifies the role the host or network played in the incident.  The possible values are:", 
+            "multiplicity": "Required", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "source", 
+                    "description": "The System was the source of the event."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "target", 
+                    "description": "The System was the target of the event."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "intermediate", 
+                    "description": "The System was an intermediary in the event."
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "sensor", 
+                    "description": "The System was a sensor monitoring the event."
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "infrastructure", 
+                    "description": "The System was an infrastructure node of IODEF document exchange."
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "ext-value", 
+                    "description": "An escape value used to extend this attribute. See Section 5.1."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 8, 
+            "name": "category"
+        }, 
+        "restriction": {
+            "ident": 116, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 9, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 10, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }, 
+        "ext-ownership": {
+            "id": 11, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-ownership", 
+            "description": null
+        }, 
+        "ext-category": {
+            "id": 12, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-category", 
+            "description": "A means by which to extend the category attribute.  See Section 5.1."
+        }, 
+        "spoofed": {
+            "ident": 117, 
+            "description": "An indication of confidence in whether this System was the true target or attacking host.  The permitted values for this attribute are shown below.  The default value is \"unknown\".", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "unknown", 
+                    "description": "The accuracy of the category attribute value is unknown."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "yes", 
+                    "description": "The category attribute value is probably incorrect.  In the case of a source, the System is likely a decoy; with a target, the System was likely not the intended victim."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "no", 
+                    "description": "The category attribute value is believed to be correct."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 13, 
+            "name": "spoofed"
+        }, 
+        "virtual": {
+            "ident": 118, 
+            "description": "An indication of confidence in whether this System was the true target or attacking host.  The permitted values for this attribute are shown below.  The default value is \"unknown\".", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "yes", 
+                    "description": "The accuracy of the category attribute value is unknown."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "no", 
+                    "description": "The category attribute value is probably incorrect.  In the case of a source, the System is likely a decoy; with a target, the System was likely not the intended victim."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "unknown", 
+                    "description": "The category attribute value is believed to be correct."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 14, 
+            "name": "virtual"
+        }, 
+        "observable-id": {
+            "id": 15, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }, 
+        "ownership": {
+            "ident": 119, 
+            "description": "An indication of confidence in whether this System was the true target or attacking host.  The permitted values for this attribute are shown below.  The default value is \"unknown\".", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "organization", 
+                    "description": "The accuracy of the category attribute value is unknown."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "personal", 
+                    "description": "The category attribute value is probably incorrect.  In the case of a source, the System is likely a decoy; with a target, the System was likely not the intended victim."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "customer", 
+                    "description": "The accuracy of the category attribute value is unknown."
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "no-relationship", 
+                    "description": "The category attribute value is probably incorrect.  In the case of a source, the System is likely a decoy; with a target, the System was likely not the intended victim."
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "unknown", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 16, 
+            "name": "ownership"
+        }, 
+        "interface": {
+            "id": 17, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "interface", 
+            "description": "Specifies the interface on which the event(s) on this System originated.  If the Node class specifies a network rather than a host, this attribute has no meaning."
+        }
+    }, 
+    "id": 120, 
+    "description": "The System class describes a system or network involved in an event. The systems or networks represented by this class are categorized according to the role they played in the incident through the category attribute.  The value of this category attribute dictates the semantics of the aggregated classes in the System class.  If the category attribute has a value of \"source\", then the aggregated classes denote the machine and service from which the activity is originating.  With a category attribute value of \"target\" or \"intermediary\", then the machine or service is the one targeted in the activity.  A value of \"sensor\" dictates that this System was part of an instrumentation to monitor the network. "
+}

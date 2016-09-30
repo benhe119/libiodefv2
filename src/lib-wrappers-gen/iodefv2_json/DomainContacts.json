@@ -1,0 +1,23 @@
+{
+    "name": "DomainContacts", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "Contact": {
+            "id": 0, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "Contact", 
+            "description": null
+        }, 
+        "SameDomainContact": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "SameDomainContact", 
+            "description": null
+        }
+    }, 
+    "attributes": {}, 
+    "id": 84, 
+    "description": null
+}

@@ -1,0 +1,25 @@
+{
+    "name": "History", 
+    "color": "#00B050", 
+    "aggregates": {
+        "HistoryItem": {
+            "id": 0, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "HistoryItem", 
+            "description": "Entry in the history log of significant events or actions performed by the involved parties."
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 102, 
+            "name": "restriction", 
+            "multiplicity": "Optional", 
+            "type": "ENUM", 
+            "id": 1, 
+            "description": "This attribute is defined in Section 3.2."
+        }
+    }, 
+    "id": 103, 
+    "description": "The History class is a log of the significant events or actions performed by the involved parties during the course of handling the incident. "
+}

@@ -1,0 +1,185 @@
+{
+    "name": "DomainData", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "Name": {
+            "id": 1, 
+            "multiplicity": "1", 
+            "type": "STRING", 
+            "name": "Name", 
+            "description": null
+        }, 
+        "Nameservers": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Nameservers", 
+            "description": null
+        }, 
+        "RegistrationDate": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "RegistrationDate", 
+            "description": null
+        }, 
+        "DomainContacts": {
+            "id": 4, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "DomainContacts", 
+            "description": null
+        }, 
+        "DateDomainWasChecked": {
+            "id": 5, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "DateDomainWasChecked", 
+            "description": null
+        }, 
+        "ExpirationDate": {
+            "id": 6, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "ExpirationDate", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "ext-domain-status": {
+            "id": 7, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-domain-status", 
+            "description": null
+        }, 
+        "domain-status": {
+            "ident": 96, 
+            "description": null, 
+            "multiplicity": "Required", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "reservedDelegation", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "assignedAndActive", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "assignedAndInactive", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "assignedAndOnHold", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "revoked", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "transferPending", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "registryLock", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "registrarLock", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "other", 
+                    "description": null
+                }, 
+                {
+                    "rank": "10", 
+                    "keyword": "unknown", 
+                    "description": null
+                }, 
+                {
+                    "rank": "11", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 8, 
+            "name": "domain-status"
+        }, 
+        "ext-system-status": {
+            "id": 9, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-system-status", 
+            "description": null
+        }, 
+        "observable-id": {
+            "id": 10, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }, 
+        "system-status": {
+            "ident": 97, 
+            "description": null, 
+            "multiplicity": "Required", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "spoofed", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "fraudulent", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "innocent-hacked", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "innocent-hijacked", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "unknown", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 11, 
+            "name": "system-status"
+        }
+    }, 
+    "id": 98, 
+    "description": null
+}

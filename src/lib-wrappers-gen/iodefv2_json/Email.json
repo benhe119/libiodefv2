@@ -1,0 +1,55 @@
+{
+    "name": "Email", 
+    "color": "#CCFF66", 
+    "aggregates": {
+        "EmailTo": {
+            "id": 0, 
+            "multiplicity": "1", 
+            "type": "EMAIL", 
+            "name": "EmailTo", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "type": {
+            "ident": 41, 
+            "description": null, 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "direct", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "hotline", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "ext-value"
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 2, 
+            "name": "type"
+        }, 
+        "ext-type": {
+            "id": 3, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-type", 
+            "description": null
+        }
+    }, 
+    "id": 42, 
+    "description": "The Email class specifies an email address formatted according to EMAIL data type (Section 2.14). "
+}

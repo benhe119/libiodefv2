@@ -1,0 +1,188 @@
+{
+    "name": "BulkObservable", 
+    "color": "#bfbfbf", 
+    "aggregates": {
+        "BulkObservableList": {
+            "id": 0, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "BulkObservableList", 
+            "description": null
+        }, 
+        "BulkObservableFormat": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "BulkObservableFormat", 
+            "description": null
+        }, 
+        "AdditionalData": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": "The time the event started."
+        }
+    }, 
+    "attributes": {
+        "type": {
+            "ident": 107, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "asn", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "atm", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "e-mail", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "ipv4-addr", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "ipv4-net", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "ipv4-net-mask", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "ipv6-addr", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "ipv6-net", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "ipv6-net-mask", 
+                    "description": null
+                }, 
+                {
+                    "rank": "10", 
+                    "keyword": "mac", 
+                    "description": null
+                }, 
+                {
+                    "rank": "11", 
+                    "keyword": "site-uri", 
+                    "description": null
+                }, 
+                {
+                    "rank": "12", 
+                    "keyword": "domain-name", 
+                    "description": null
+                }, 
+                {
+                    "rank": "13", 
+                    "keyword": "domain-to-ipv4", 
+                    "description": null
+                }, 
+                {
+                    "rank": "14", 
+                    "keyword": "domain-to-ipv6", 
+                    "description": null
+                }, 
+                {
+                    "rank": "15", 
+                    "keyword": "domain-to-ipv4-timestamp", 
+                    "description": null
+                }, 
+                {
+                    "rank": "16", 
+                    "keyword": "domain-to-ipv6-timestamp", 
+                    "description": null
+                }, 
+                {
+                    "rank": "17", 
+                    "keyword": "ipv4-port", 
+                    "description": null
+                }, 
+                {
+                    "rank": "18", 
+                    "keyword": "ipv6-port", 
+                    "description": null
+                }, 
+                {
+                    "rank": "19", 
+                    "keyword": "windows-reg-key", 
+                    "description": null
+                }, 
+                {
+                    "rank": "20", 
+                    "keyword": "file-hash", 
+                    "description": null
+                }, 
+                {
+                    "rank": "21", 
+                    "keyword": "email-x-mailer", 
+                    "description": null
+                }, 
+                {
+                    "rank": "22", 
+                    "keyword": "email-subject", 
+                    "description": null
+                }, 
+                {
+                    "rank": "23", 
+                    "keyword": "http-user-agent", 
+                    "description": null
+                }, 
+                {
+                    "rank": "24", 
+                    "keyword": "http-request-uri", 
+                    "description": null
+                }, 
+                {
+                    "rank": "25", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "26", 
+                    "keyword": "file-path", 
+                    "description": null
+                }, 
+                {
+                    "rank": "27", 
+                    "keyword": "user-name", 
+                    "description": null
+                }, 
+                {
+                    "rank": "28", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 3, 
+            "name": "type"
+        }, 
+        "ext-type": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-type", 
+            "description": null
+        }
+    }, 
+    "id": 108, 
+    "description": "The EventData class describes a particular event of the incident for a given set of hosts or networks.  This description includes the systems from which the activity originated and those targeted, an assessment of the techniques used by the intruder, the impact of the activity on the organization, and any forensic evidence discovered."
+}

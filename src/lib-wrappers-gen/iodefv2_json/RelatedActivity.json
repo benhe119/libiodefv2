@@ -1,0 +1,128 @@
+{
+    "name": "RelatedActivity", 
+    "color": "#99CC00", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "Confidence": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Confidence", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }, 
+        "Campaign": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Campaign", 
+            "description": null
+        }, 
+        "URL": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": "URL", 
+            "name": "URL", 
+            "description": "A URL to activity related to this incident."
+        }, 
+        "ThreatActor": {
+            "id": 5, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "ThreatActor", 
+            "description": null
+        }, 
+        "IndicatorID": {
+            "id": 6, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "IndicatorID", 
+            "description": null
+        }, 
+        "IncidentID": {
+            "id": 7, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "IncidentID", 
+            "description": "The incident tracking number of a related incident."
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 82, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 8, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 9, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }
+    }, 
+    "id": 83, 
+    "description": "The RelatedActivity class lists either incident tracking numbers of incidents or URLs (not both) that refer to activity related to the one described in the IODEF document.  These references may be to local incident tracking numbers or to those of other CSIRTs. "
+}

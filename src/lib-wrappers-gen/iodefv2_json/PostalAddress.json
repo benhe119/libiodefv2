@@ -1,0 +1,55 @@
+{
+    "name": "PostalAddress", 
+    "color": "#CCFF66", 
+    "aggregates": {
+        "PAddress": {
+            "id": 0, 
+            "multiplicity": "1", 
+            "type": "POSTAL", 
+            "name": "PAddress", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "type": {
+            "ident": 21, 
+            "description": null, 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "street", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "mailing", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "ext-value"
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 2, 
+            "name": "type"
+        }, 
+        "ext-type": {
+            "id": 3, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-type", 
+            "description": null
+        }
+    }, 
+    "id": 22, 
+    "description": "The PostalAddress class specifies a postal address formatted according to the POSTAL data type (Section 2.11). "
+}

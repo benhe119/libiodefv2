@@ -1,0 +1,31 @@
+{
+  "name": "Container",
+  "id": "24",
+  "description": "The Container class represents the file wich contain this file",
+  "color": "#FFCC00",
+  "aggregates": {
+    "name": {
+      "name": "name",
+      "id": "0",
+      "multiplicity": "1",
+      "type": "STRING",
+      "description": "The name of the file system object, not including the path."
+    },
+    "path": {
+      "name": "path",
+      "id": "1",
+      "multiplicity": "1",
+      "type": "STRING",
+      "description": "The full path to the file system object, including the name.  The path name should be represented in as \"universal\" a manner as possible, to facilitate processing of the alert."
+    },
+    "File": {
+      "name": "File",
+      "id": "2",
+      "multiplicity": "1",
+      "type": null,
+      "description": "A <File> element may be used in place of the <name> and <path> elements if additional information about the file is to be included."
+    }
+  },
+  "attributes": {
+  }
+}

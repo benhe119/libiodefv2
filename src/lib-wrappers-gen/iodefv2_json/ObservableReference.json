@@ -1,0 +1,16 @@
+{
+    "name": "ObservableReference", 
+    "color": "#284f9f", 
+    "aggregates": {}, 
+    "attributes": {
+        "uid-ref": {
+            "id": 0, 
+            "multiplicity": "Required", 
+            "type": "IDREF", 
+            "name": "uid-ref", 
+            "description": null
+        }
+    }, 
+    "id": 7, 
+    "description": null
+}

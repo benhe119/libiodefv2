@@ -1,0 +1,236 @@
+{
+    "name": "Expectation", 
+    "color": "#bfbfbf", 
+    "aggregates": {
+        "EndTime": {
+            "id": 0, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "EndTime", 
+            "description": "The time by which the action should be completed. If the action is not carried out by this time, it should no longer be performed."
+        }, 
+        "DefinedCOA": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "STRING", 
+            "name": "DefinedCOA", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A free-form description of the desired action(s)."
+        }, 
+        "StartTime": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "StartTime", 
+            "description": "The time at which the action should be performed.  A timestamp that is earlier than the ReportTime specified in the Incident class denotes that the expectation should be fulfilled as soon as possible.  The absence of this element leaves the execution of the expectation to the discretion of the recipient."
+        }, 
+        "Contact": {
+            "id": 4, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Contact", 
+            "description": "The expected actor for the action."
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 92, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 5, 
+            "name": "restriction"
+        }, 
+        "ext-action": {
+            "id": 6, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-action", 
+            "description": null
+        }, 
+        "ext-severity": {
+            "id": 7, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-severity", 
+            "description": null
+        }, 
+        "severity": {
+            "ident": 93, 
+            "description": "Indicates the desired priority of the action. This attribute is an enumerated list with no default value, and the semantics of these relative measures are context dependent.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "low", 
+                    "description": "Low priority"
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "medium", 
+                    "description": "Medium priority"
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "high", 
+                    "description": "High priority"
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 8, 
+            "name": "severity"
+        }, 
+        "action": {
+            "ident": 94, 
+            "description": "Classifies the type of action requested.  This attribute is an enumerated list with no default value.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "nothing", 
+                    "description": "No action is requested. Do nothing with the information."
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "contact-source-site", 
+                    "description": "Contact the site(s) identified as the source of the activity."
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "contact-target-site", 
+                    "description": "Contact the site(s) identified as the target of the activity."
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "contact-sender", 
+                    "description": "Contact the originator of the document."
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "investigate", 
+                    "description": "Investigate the systems(s) listed in the event."
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "block-host", 
+                    "description": "Block traffic from the machine(s) listed as sources the event."
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "block-network", 
+                    "description": "Block traffic from the network(s) lists as sources in the event."
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "block-port", 
+                    "description": "Block the port listed as sources in the event."
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "rate-limit-host", 
+                    "description": "Rate-limit the traffic from the machine(s) listed as sources in the event."
+                }, 
+                {
+                    "rank": "10", 
+                    "keyword": "rate-limit-network", 
+                    "description": "Rate-limit the traffic from the network(s) lists as sources in the event."
+                }, 
+                {
+                    "rank": "11", 
+                    "keyword": "rate-limit-port", 
+                    "description": "Rate-limit the port(s) listed as sources in the event."
+                }, 
+                {
+                    "rank": "12", 
+                    "keyword": "remediate-other", 
+                    "description": "Remediate the activity in a way other than by rate limiting or blocking."
+                }, 
+                {
+                    "rank": "13", 
+                    "keyword": "status-triage", 
+                    "description": "Conveys receipts and the triaging of an incident."
+                }, 
+                {
+                    "rank": "14", 
+                    "keyword": "status-new-info", 
+                    "description": "Conveys that new information was received for this incident."
+                }, 
+                {
+                    "rank": "15", 
+                    "keyword": "other", 
+                    "description": "Perform some custom action described in the Description class."
+                }, 
+                {
+                    "rank": "16", 
+                    "keyword": "ext-value", 
+                    "description": "An escape value used to extend this attribute. See Section 5.1."
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 9, 
+            "name": "action"
+        }, 
+        "ext-restriction": {
+            "id": 10, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }
+    }, 
+    "id": 95, 
+    "description": "The Expectation class conveys to the recipient of the IODEF document the actions the sender is requesting.  The scope of the requested action is limited to purview of the EventData class in which this class is aggregated. "
+}

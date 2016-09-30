@@ -1,0 +1,47 @@
+{
+  "name": "OriginalData",
+  "id": "36",
+  "description": "The Origin class is used to provide information that cannot be represented by the data model.  Origin can be used to provide atomic data (integers, strings, etc.) in cases where only small amounts of additional information need to be sent; it can also be used to extend the data model and the DTD to support the transmission of complex data (such as packet headers).  Detailed instructions for extending the data model and the DTD are provided in Section 5. ",
+  "aggregates": {
+    "Node": {
+      "name": "Node",
+      "id": "0",
+      "description": null,
+      "multiplicity": "0..1",
+      "type": null
+    },
+    "File": {
+      "name": "File",
+      "id": "1",
+      "description": null,
+      "multiplicity": "0..1",
+      "type": null
+    }
+  },
+  "attributes": {
+    "timestamp": {
+      "name": "timestamp",
+      "id": "2",
+      "multiplicity": "Required",
+      "description": "",
+      "type": "DATETIME",
+      "values": [
+
+      ]
+    },
+    "name": {
+      "name": "name",
+      "id": "3",
+      "multiplicity": "Required",
+      "type": "STRING",
+      "description": ""
+    },
+    "data": {
+      "name": "data",
+      "id": "4",
+      "multiplicity": "Required",
+      "type": "BYTE[]",
+      "description": ""
+    }
+  }
+}

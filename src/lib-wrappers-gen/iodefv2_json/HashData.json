@@ -1,0 +1,93 @@
+{
+    "name": "HashData", 
+    "color": "#ffcc00", 
+    "aggregates": {
+        "HashTargetID": {
+            "id": 0, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "HashTargetID", 
+            "description": null
+        }, 
+        "Hash": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Hash", 
+            "description": null
+        }, 
+        "FuzzyHash": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "FuzzyHash", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "scope": {
+            "ident": 99, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "file-content", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "file-pe-section", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "file-pe-iat", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "file-pe-resource", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "file-pdf-object", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "email-hash", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "email-headers-hash", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "email-body-hash", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 3, 
+            "name": "scope"
+        }, 
+        "ext-scope": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-scope", 
+            "description": null
+        }
+    }, 
+    "id": 100, 
+    "description": "The RecordData class groups log or audit data from a given sensor (e.g., IDS, firewall log) and provides a way to annotate the output. "
+}

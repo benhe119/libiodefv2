@@ -1,0 +1,134 @@
+IODEFV2 Library (https://www.prelude-siem.org)
+
+The IODEFV2 Library is brought to you by CS (http://www.c-s.fr)
+under GPLv2 license.
+
+Copying and distribution of this library, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without warranty of any kind.
+
+For commercial use, if you need another license than GPLv2, please
+contact CS : contact.prelude@c-s.fr
+
+IODEFV2 Library Overview
+========================
+
+The IODEFV2 Library is a framework to manipulate IODEFV2 objects. You can
+create, update and print IODEFV2 objects. It used to make sensor
+developers' life better by providing features used by every sensor.
+
+The IODEFV2 object is described in RFC 5070: https://www.ietf.org/rfc/rfc5070.txt
+
+To update a value, you have to use the IODEFV2 Paths, inpired by
+libPrelude paths.
+
+The print functions allow you to export IODEFV2 as :
+- pretty print stdout
+- JSON string
+- Binary string, inspired by libPrelude implementation
+
+For transport dedicated to IODEFV2 objects, we will soon release a
+framework to do that.
+
+The IODEFV2 Library is inspired by libPrelude (https://www.prelude-siem.org).
+
+Dependencies
+============
+
+   For Redhat based systems (CentOS, Fedora, etc.)
+       Minimal            :    gcc gcc-c++ gnutls-devel libgcrypt-devel make
+                               libtool-ltdl-devel
+       Documentation      :    gtk-doc
+       Perl Binding       :    perl perl-devel
+       Python Binding     :    python python-devel
+       LUA Binding        :    lua lua-devel
+       Ruby Binding       :    ruby ruby-devel
+
+   For Debian systems
+       Minimal            :    gcc g++ libcurl4-gnutls-dev libglib2.0-dev make
+                               libltdl-dev
+       Documentation      :    gtk-doc-tools
+       Perl Binding       :    perl
+       Python Binding     :    python python-dev
+       Ruby Binding       :    ruby ruby-dev
+
+       For Debian 7
+              LUA Binding :    lua5.2 liblua5.2-dev
+       For Debian 6
+              LUA Binding :    lua5.1 liblua5.1-dev
+
+
+
+IRC
+===
+
+If there's something you just can't find out elsewhere, you want to
+give feedback directly to the authors or you're just bored, visit
+#prelude on irc.freenode.net
+
+
+
+Get Support
+===========
+
+We use the Prelude-user forums for the support. It can be accessed at:
+	https://www.prelude-siem.org/projects/prelude/boards
+
+Commercial Support is available through the CS company:
+	http://www.prelude-siem.com, contact.prelude@c-s.fr
+
+
+
+Help development
+================
+
+For now, we are using the Prelude support (boards, bug tracker, irc) to
+discuss with people who need help.
+
+1. SUBMITTING PATCHES
+
+The IODEFV2 source is constantly changing. If you want to submit a patch,
+please do so from the most recent GIT source tree, subscribe to the
+prelude-devel forum and post your patch with a description of functionality.
+You can also attach patches to bugs on
+
+        https://www.prelude-siem.org
+
+
+2. BUGS
+
+If you find any bugs, please report them to:
+
+	https://www.prelude-siem.org
+
+Please make sure that what you're reporting is actually a BUG and not
+a problem on your side.
+
+
+3. SUGGESTIONS
+
+Subscribe to prelude-devel and give us your suggestions.
+
+
+
+How to install the IODEFV2 Library
+==================================
+
+
+1. IODEFV2 Library installation
+
+If you want to build IODEFV2, unpack the tarball and cd into the
+newly created directory. Then type :
+
+	./configure
+	make
+
+If everything works, su to root and type:
+
+	make install
+
+How to use the IODEFV2 Library
+============================
+
+You can see two example in the example folder.

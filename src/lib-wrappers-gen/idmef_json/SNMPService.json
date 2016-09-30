@@ -1,0 +1,73 @@
+{
+  "name": "SNMPService",
+  "id": "15",
+  "description": "The SNMPService class carries additional information related to SNMP traffic.  The aggregate classes composing SNMPService must be interpreted as described in RFC 3411 [15] and RFC 3584 [16]. ",
+  "color": "#FFCCCC",
+  "aggregates": {
+    "oid": {
+      "name": "oid",
+      "id": "0",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The object identifier in the request."
+    },
+    "messageProcessingModel": {
+      "name": "messageProcessingModel",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": "INTEGER",
+      "description": "The SNMP version, typically 0 for SNMPv1, 1 for SNMPv2c, 2 for SNMPv2u and SNMPv2*, and 3 for SNMPv3; see RFC 3411 [15] Section 5 for appropriate values."
+    },
+    "securityModel": {
+      "name": "securityModel",
+      "id": "2",
+      "multiplicity": "0..1",
+      "type": "INTEGER",
+      "description": "The identification of the security model in use, typically 0 for any, 1 for SNMPv1, 2 for SNMPv2c, and 3 for USM; see RFC 3411 [15] Section 5 for appropriate values."
+    },
+    "securityName":{
+      "name": "securityName",
+      "id": "3",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The object's security name; see RFC 3411 [15] Section 3.2.2."
+    },
+    "securityLevel": {
+      "name": "securityLevel",
+      "id": "4",
+      "multiplicity": "0..1",
+      "type": "INTEGER",
+      "description": "The security level of the SNMP request; see RFC 3411 [15] Section 3.4.3."
+    },
+    "contextName":{
+      "name": "contextName",
+      "id": "5",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The object's context name; see RFC 3411 [15] Section 3.3.3."
+    },
+    "contextEngineID": {
+      "name": "contextEngineID",
+      "id": "6",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The object's context engine identifier; see RFC 3411 [15] Section 3.3.2."
+    },
+    "command": {
+      "name": "command",
+      "id": "7",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The command sent to the SNMP server (GET, SET, etc.)."
+    },
+    "community": {
+      "name": "community",
+      "id": "8",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": ""
+    }
+  },
+  "attributes": {
+  }
+}

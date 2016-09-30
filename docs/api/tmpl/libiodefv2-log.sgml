@@ -1,0 +1,145 @@
+<!-- ##### SECTION Title ##### -->
+libiodefv2-log
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM libiodefv2_log_t ##### -->
+<para>
+
+</para>
+
+@LIBIODEFV2_LOG_CRIT: 
+@LIBIODEFV2_LOG_ERR: 
+@LIBIODEFV2_LOG_WARN: 
+@LIBIODEFV2_LOG_INFO: 
+@LIBIODEFV2_LOG_DEBUG: 
+
+<!-- ##### ENUM libiodefv2_log_flags_t ##### -->
+<para>
+
+</para>
+
+@LIBIODEFV2_LOG_FLAGS_QUIET: 
+@LIBIODEFV2_LOG_FLAGS_SYSLOG: 
+
+<!-- ##### MACRO libiodefv2_log ##### -->
+<para>
+
+</para>
+
+@level: 
+@...: 
+
+
+<!-- ##### MACRO libiodefv2_log_debug ##### -->
+<para>
+
+</para>
+
+@level: 
+@...: 
+
+
+<!-- ##### MACRO libiodefv2_log_v ##### -->
+<para>
+
+</para>
+
+@level: 
+@fmt: 
+@ap: 
+
+
+<!-- ##### MACRO libiodefv2_log_debug_v ##### -->
+<para>
+
+</para>
+
+@level: 
+@fmt: 
+@ap: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_set_level ##### -->
+<para>
+
+</para>
+
+@level: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_set_debug_level ##### -->
+<para>
+
+</para>
+
+@level: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_get_flags ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_set_flags ##### -->
+<para>
+
+</para>
+
+@flags: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_get_prefix ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_set_prefix ##### -->
+<para>
+
+</para>
+
+@prefix: 
+
+
+<!-- ##### FUNCTION libiodefv2_log_set_callback ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION libiodefv2_log_set_logfile ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+

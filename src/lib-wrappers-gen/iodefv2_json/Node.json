@@ -1,0 +1,44 @@
+{
+    "name": "Node", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "PostalAddress": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": "POSTAL", 
+            "name": "PostalAddress", 
+            "description": "The hardware, network, or application address of the Node.  If a NodeName is not provided, at least one Address MUST be specified."
+        }, 
+        "Counter": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Counter", 
+            "description": "A counter with which to summarizes properties of this host or network."
+        }, 
+        "Location": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": "ML_STRING", 
+            "name": "Location", 
+            "description": "A free-from description of the physical location of the equipment."
+        }, 
+        "DomainData": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "DomainData", 
+            "description": "The name of the Node (e.g., fully qualified domain name).  This information MUST be provided if no Address information is given."
+        }, 
+        "Address": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Address", 
+            "description": "The hardware, network, or application address of the Node.  If a NodeName is not provided, at least one Address MUST be specified."
+        }
+    }, 
+    "attributes": {}, 
+    "id": 111, 
+    "description": "The Node class names a system (e.g., PC, router) or network. "
+}

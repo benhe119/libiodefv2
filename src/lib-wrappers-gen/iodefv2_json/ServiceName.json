@@ -1,0 +1,30 @@
+{
+    "name": "ServiceName", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "URL": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": "URL", 
+            "name": "URL", 
+            "description": "A port number."
+        }, 
+        "IANAService": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": "STRING", 
+            "name": "IANAService", 
+            "description": null
+        }, 
+        "Description": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A list of port numbers formatted according to Section 2.10."
+        }
+    }, 
+    "attributes": {}, 
+    "id": 55, 
+    "description": "The Service class describes a network service of a host or network. The service is identified by specific port or list of ports, along with the application listening on that port. "
+}

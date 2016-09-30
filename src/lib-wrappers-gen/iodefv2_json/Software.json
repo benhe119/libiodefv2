@@ -1,0 +1,31 @@
+{
+    "name": "Software",
+    "color": "#FFCC66",
+    "attributes": {
+        "URL": {
+            "id": 1,
+            "multiplicity": "Optional",
+            "type": "URL",
+            "name": "URL",
+            "description": ""
+        },
+        "description": {
+            "id": 2,
+            "multiplicity": "Optional",
+            "type": "STRING",
+            "name": "description",
+            "description": ""
+        }
+    },
+    "aggregates": {
+        "SoftwareReference": {
+            "id": 0,
+            "multiplicity": "0..1",
+            "type": null,
+            "name": "SoftwareReference",
+            "description": ""
+        }
+    },
+    "id": 69,
+    "description": ""
+}

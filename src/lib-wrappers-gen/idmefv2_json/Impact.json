@@ -1,0 +1,149 @@
+{
+  "name": "Impact",
+  "id": "55",
+  "description": "The Impact class is used to provide the analyzer's assessment of the impact of the event on the target(s).  It is represented in the IDMEF DTD as follows: ",
+  "color": "#FF5024",
+  "aggregates": {
+    "ImpactType": {
+      "name": "impactType",
+      "id": "7",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "Impact type of the alert"
+    }
+  },
+  "attributes": {
+    "description": {
+      "name": "description",
+      "id": "5",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "Textual description of the impact"
+    },
+    "confidentiality": {
+      "name": "confidentiality",
+      "id": "4",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "ident": "54",
+      "description": "Loss of Confidentiality see ISI 002 section 1.7",
+      "values": [
+        {
+          "rank": "0",
+          "keyword": "True",
+          "description": "Loss of confidentiality"
+        },
+        {
+          "rank": "1",
+          "keyword": "False",
+          "description": "Loss of confidentiality"
+        },
+        {
+          "rank": "2",
+          "keyword": "unknown",
+          "description": "Unknown"
+        }
+      ]
+    },
+    "integrity": {
+      "name": "integrity",
+      "id": "3",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "ident": "53",
+      "description": "Loss of integrity see ISI 002 section 1.7",
+      "values": [
+        {
+          "rank": "0",
+          "keyword": "True",
+          "description": "Loss of integrity"
+        },
+        {
+          "rank": "1",
+          "keyword": "False",
+          "description": "Loss of integrity"
+        },
+        {
+          "rank": "2",
+          "keyword": "unknown",
+          "description": "Unknown"
+        }
+      ]
+    },
+    "availability": {
+      "name": "availability",
+      "id": "2",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "ident": "52",
+      "description": "Loss of availability see ISI 002 section 1.7",
+      "values": [
+        {
+          "rank": "0",
+          "keyword": "True",
+          "description": "Loss of availability"
+        },
+        {
+          "rank": "1",
+          "keyword": "False",
+          "description": "Loss of availability"
+        },
+        {
+          "rank": "2",
+          "keyword": "unknown",
+          "description": "Unknown"
+        }
+      ]
+    },
+    "severity": {
+      "name": "severity",
+      "id": "0",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "ident": "51",
+      "description": "Section 10.)",
+      "values": [
+        {
+          "rank": "0",
+          "keyword": "info",
+          "description": "Alert represents informational activity  "
+        },
+        {
+          "rank": "1",
+          "keyword": "low",
+          "description": "Low severity  "
+        },
+        {
+          "rank": "2",
+          "keyword": "medium",
+          "description": "Medium severity  "
+        },
+        {
+          "rank": "3",
+          "keyword": "high",
+          "description": "High severity"
+        }
+      ]
+    },
+    "completion": {
+      "name": "completion",
+      "id": "1",
+      "multiplicity": "Optional",
+      "type": "ENUM",
+      "ident": "50",
+      "description": "Section 10.)",
+      "values": [
+        {
+          "rank": "0",
+          "keyword": "failed",
+          "description": "The attempt was not successful"
+        },
+        {
+          "rank": "1",
+          "keyword": "succeeded",
+          "description": "The attempt succeeded"
+        }
+      ]
+    }
+  }
+}

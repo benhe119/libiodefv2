@@ -1,0 +1,198 @@
+{
+    "name": "Observable", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "DetectionPattern": {
+            "id": 0, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "DetectionPattern", 
+            "description": null
+        }, 
+        "Service": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Service", 
+            "description": null
+        }, 
+        "AdditionalData": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }, 
+        "System": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "System", 
+            "description": null
+        }, 
+        "DomainData": {
+            "id": 4, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "DomainData", 
+            "description": null
+        }, 
+        "EmailData": {
+            "id": 5, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "EmailData", 
+            "description": "A layer-4 protocol specific type field (e.g., ICMP type field)."
+        }, 
+        "Assessment": {
+            "id": 6, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Assessment", 
+            "description": null
+        }, 
+        "RecordData": {
+            "id": 7, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "RecordData", 
+            "description": null
+        }, 
+        "Reference": {
+            "id": 8, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Reference", 
+            "description": null
+        }, 
+        "HistoryItem": {
+            "id": 9, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "HistoryItem", 
+            "description": null
+        }, 
+        "BulkObservable": {
+            "id": 10, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "BulkObservable", 
+            "description": null
+        }, 
+        "CertificateData": {
+            "id": 11, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "CertificateData", 
+            "description": null
+        }, 
+        "Expectation": {
+            "id": 12, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Expectation", 
+            "description": null
+        }, 
+        "WindowsRegistryKeysModified": {
+            "id": 13, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "WindowsRegistryKeysModified", 
+            "description": null
+        }, 
+        "Address": {
+            "id": 14, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Address", 
+            "description": null
+        }, 
+        "EventData": {
+            "id": 15, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "EventData", 
+            "description": null
+        }, 
+        "FileData": {
+            "id": 16, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "FileData", 
+            "description": null
+        }, 
+        "RegistryHandle": {
+            "id": 17, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "RegistryHandle", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 128, 
+            "description": null, 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 18, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 19, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }
+    }, 
+    "id": 129, 
+    "description": null
+}

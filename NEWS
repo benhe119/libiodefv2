@@ -1,0 +1,7 @@
+* 2016-05-30, libiodefv2-3.0.0:
+
+Author: Selim Menouar
+
+- Initial commit for libiodefv2
+- Support C/C++ and Python bindings
+- Example of use in example folder

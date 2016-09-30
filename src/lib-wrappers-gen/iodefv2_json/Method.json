@@ -1,0 +1,93 @@
+{
+    "name": "Method", 
+    "color": "#996633", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": "A mechanism by which to extend the data model."
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "A free-form text description of the methodology used by the intruder."
+        }, 
+        "Reference": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Reference", 
+            "description": "A reference to a vulnerability, malware sample, advisory, or analysis of an attack technique."
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 65, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 3, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }
+    }, 
+    "id": 66, 
+    "description": "The Method class describes the methodology used by the intruder to perpetrate the events of the incident.  This class consists of a list of references describing the attack method and a free form description of the technique. "
+}

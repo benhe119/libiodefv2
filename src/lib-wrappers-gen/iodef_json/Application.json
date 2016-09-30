@@ -1,0 +1,66 @@
+{
+  "name": "Application",
+  "id": "14",
+  "description": "The Application class describes an application running on a System providing a Service. ",
+  "color": "#284f9f",
+  "aggregates": {
+    "URL": {
+      "name": "URL",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": "URL",
+      "description": "A URL describing the application."
+    }
+  },
+  "attributes": {
+    "swid": {
+      "name": "swid",
+      "id": "5",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "An identifier that can be used to reference this software."
+    },
+    "configid": {
+      "name": "configid",
+      "id": "8",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "An identifier that can be used to reference a particular configuration of this software."
+    },
+    "vendor": {
+      "name": "vendor",
+      "id": "2",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Vendor name of the software."
+    },
+    "family": {
+      "name": "family",
+      "id": "4",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Family of the software."
+    },
+    "name": {
+      "name": "name",
+      "id": "3",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Name of the software."
+    },
+    "version": {
+      "name": "version",
+      "id": "7",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Version of the software."
+    },
+    "patch": {
+      "name": "patch",
+      "id": "6",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Patch or service pack level of the software."
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Analyzer",
+  "id": "43",
+  "description": "The Analyzer class identifies the analyzer from which the Alert or Heartbeat message originates.  Only one analyzer may be encoded for each alert or heartbeat, and that MUST be the analyzer at which the alert or heartbeat originated.  Although the IDMEF data model does not prevent the use of hierarchical intrusion detection systems (where alerts get relayed up the tree), it does not provide any way to record the identity of the \"relay\" analyzers along the path from the originating analyzer to the manager that ultimately receives the alert. ",
+  "color": "#FFFF66",
+  "aggregates": {
+    "Node": {
+      "name": "Node",
+      "id": "0",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the host or device on which the analyzer resides (network address, network name, etc.)."
+    },
+    "Process": {
+      "name": "Process",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the process in which the analyzer is executing."
+    },
+    "AnalyzerTime": {
+      "name": "AnalyzerTime",
+      "id": "11",
+      "multiplicity": "0..1",
+      "type": "DATETIME",
+      "description": "The current time on the analyzer (see Section 6.3)."
+    }
+  },
+  "attributes": {
+    "analyzerid": {
+      "name": "analyzerid",
+      "id": "3",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "(but see below).  A unique identifier for the analyzer; see Section 3.2.9."
+    },
+    "name": {
+      "name": "name",
+      "id": "4",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "An explicit name for the analyzer that may be easier to understand than the analyzerid."
+    },
+    "manufacturer": {
+      "name": "manufacturer",
+      "id": "5",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The manufacturer of the analyzer software and/or hardware."
+    },
+    "model": {
+      "name": "model",
+      "id": "6",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The model name/number of the analyzer software and/or hardware."
+    },
+    "version": {
+      "name": "version",
+      "id": "7",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The version number of the analyzer software and/or hardware."
+    },
+    "class": {
+      "name": "class",
+      "id": "8",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "The class of analyzer software and/or hardware."
+    },
+    "ostype": {
+      "name": "ostype",
+      "id": "9",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Operating system name.  On POSIX 1003.1 compliant systems, this is the value returned in utsname.sysname by the uname() system call, or the output of the \"uname -s\" command."
+    },
+    "osversion": {
+      "name": "osversion",
+      "id": "10",
+      "multiplicity": "Optional",
+      "type": "STRING",
+      "description": "Operating system version.  On POSIX 1003.1 compliant systems, this is the value returned in utsname.release by the uname() system call, or the output of the \"uname -r\" command."
+    }
+  }
+}

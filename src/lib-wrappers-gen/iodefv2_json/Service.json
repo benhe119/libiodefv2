@@ -1,0 +1,87 @@
+{
+    "name": "Service", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "ProtoCode": {
+            "id": 0, 
+            "multiplicity": "0..1", 
+            "type": "INTEGER", 
+            "name": "ProtoCode", 
+            "description": "A layer-4 protocol-specific code field (e.g., ICMP code field)."
+        }, 
+        "Portlist": {
+            "id": 1, 
+            "multiplicity": "0..1", 
+            "type": "PORTLIST", 
+            "name": "Portlist", 
+            "description": "A list of port numbers formatted according to Section 2.10."
+        }, 
+        "ProtoField": {
+            "id": 2, 
+            "multiplicity": "0..1", 
+            "type": "INTEGER", 
+            "name": "ProtoField", 
+            "description": "A layer-4 protocol specific flag field (e.g., TCP flag field)."
+        }, 
+        "ServiceName": {
+            "id": 3, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "ServiceName", 
+            "description": null
+        }, 
+        "ApplicationHeader": {
+            "id": 4, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "ApplicationHeader", 
+            "description": null
+        }, 
+        "EmailData": {
+            "id": 5, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "EmailData", 
+            "description": null
+        }, 
+        "ProtoType": {
+            "id": 6, 
+            "multiplicity": "0..1", 
+            "type": "INTEGER", 
+            "name": "ProtoType", 
+            "description": "A layer-4 protocol specific type field (e.g., ICMP type field)."
+        }, 
+        "Port": {
+            "id": 7, 
+            "multiplicity": "0..1", 
+            "type": "INTEGER", 
+            "name": "Port", 
+            "description": "A port number."
+        }, 
+        "Software": {
+            "id": 8, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Software", 
+            "description": "The application bound to the specified Port or Portlist."
+        }
+    }, 
+    "attributes": {
+        "ip_protocol": {
+            "id": 9, 
+            "multiplicity": "Required", 
+            "type": "INTEGER", 
+            "name": "ip_protocol", 
+            "description": "The IANA protocol number."
+        }, 
+        "observable-id": {
+            "id": 10, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 112, 
+    "description": "The Service class describes a network service of a host or network. The service is identified by specific port or list of ports, along with the application listening on that port. "
+}

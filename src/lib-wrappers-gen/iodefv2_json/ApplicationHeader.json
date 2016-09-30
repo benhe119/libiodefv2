@@ -1,0 +1,16 @@
+{
+    "name": "ApplicationHeader", 
+    "color": "#284f9f", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": null
+        }
+    }, 
+    "attributes": {}, 
+    "id": 60, 
+    "description": null
+}

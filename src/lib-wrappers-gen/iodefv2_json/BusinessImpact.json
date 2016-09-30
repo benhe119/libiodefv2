@@ -1,0 +1,151 @@
+{
+    "name": "BusinessImpact", 
+    "color": "#FF5024", 
+    "aggregates": {
+        "Description": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": null
+        }
+    }, 
+    "attributes": {
+        "ext-severity": {
+            "id": 1, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-severity", 
+            "description": null
+        }, 
+        "type": {
+            "ident": 37, 
+            "description": null, 
+            "multiplicity": "Required", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "breach-proprietary", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "breach-privacy", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "breach-credential", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "loss-of-integrity", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "loss-of-service", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "theft-financial", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "theft-service", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "degraded-reputation", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "asset-damage", 
+                    "description": null
+                }, 
+                {
+                    "rank": "10", 
+                    "keyword": "damaged-system", 
+                    "description": null
+                }, 
+                {
+                    "rank": "11", 
+                    "keyword": "legal", 
+                    "description": null
+                }, 
+                {
+                    "rank": "12", 
+                    "keyword": "extortion", 
+                    "description": null
+                }, 
+                {
+                    "rank": "13", 
+                    "keyword": "unknown", 
+                    "description": null
+                }, 
+                {
+                    "rank": "14", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 2, 
+            "name": "type"
+        }, 
+        "severity": {
+            "ident": 38, 
+            "description": "An estimate of the relative severity of the activity. The permitted values are shown below.  There is no default value.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "low", 
+                    "description": "Low severity"
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "medium", 
+                    "description": "Medium severity"
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "high", 
+                    "description": "High severity"
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "None", 
+                    "description": "Low severity"
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "unknown", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "ext-value", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 3, 
+            "name": "severity"
+        }, 
+        "ext-type": {
+            "id": 4, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-type", 
+            "description": null
+        }
+    }, 
+    "id": 39, 
+    "description": "The Impact class allows for categorizing and describing the technical impact of the incident on the network of an organization."
+}

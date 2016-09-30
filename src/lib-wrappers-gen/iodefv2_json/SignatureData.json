@@ -1,0 +1,16 @@
+{
+    "name": "SignatureData", 
+    "color": "#ffcc00", 
+    "aggregates": {
+        "Signature": {
+            "id": 0, 
+            "multiplicity": "1..*", 
+            "type": "STRING", 
+            "name": "Signature", 
+            "description": null
+        }
+    }, 
+    "attributes": {}, 
+    "id": 57, 
+    "description": null
+}

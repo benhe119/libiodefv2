@@ -1,0 +1,23 @@
+{
+    "name": "Nameservers", 
+    "color": "#FF5024", 
+    "aggregates": {
+        "Address": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "Address", 
+            "description": null
+        }, 
+        "Server": {
+            "id": 1, 
+            "multiplicity": "1", 
+            "type": "STRING", 
+            "name": "Server", 
+            "description": null
+        }
+    }, 
+    "attributes": {}, 
+    "id": 70, 
+    "description": "The Counter class summarize multiple occurrences of some event, or conveys counts or rates on various features (e.g., packets, sessions, events). "
+}

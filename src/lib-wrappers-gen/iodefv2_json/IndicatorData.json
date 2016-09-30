@@ -1,0 +1,16 @@
+{
+    "name": "IndicatorData", 
+    "color": "#ffcc00", 
+    "aggregates": {
+        "Indicator": {
+            "id": 0, 
+            "multiplicity": "1..*", 
+            "type": null, 
+            "name": "Indicator", 
+            "description": null
+        }
+    }, 
+    "attributes": {}, 
+    "id": 134, 
+    "description": null
+}

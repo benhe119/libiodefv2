@@ -1,0 +1,60 @@
+{
+  "name": "RecordData",
+  "id": "15",
+  "description": "The RecordData class groups log or audit data from a given sensor (e.g., IDS, firewall log) and provides a way to annotate the output. ",
+  "color": "#ffcc00",
+  "aggregates": {
+    "DateTime": {
+      "name": "DateTime",
+      "id": "4",
+      "multiplicity": "0..1",
+      "type": "DATETIME",
+      "description": "Timestamp of the RecordItem data."
+    },
+    "Description": {
+      "name": "Description",
+      "id": "2",
+      "multiplicity": "0..*",
+      "type": "ML_STRING",
+      "description": "Free-form textual description of the provided RecordItem data.  At minimum, this description should convey the significance of the provided RecordItem data."
+    },
+    "Application": {
+      "name": "Application",
+      "id": "5",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "Information about the sensor used to generate the RecordItem data."
+    },
+    "RecordPattern": {
+      "name": "RecordPattern",
+      "id": "3",
+      "multiplicity": "0..*",
+      "type": null,
+      "description": "A search string to precisely find the relevant data in a RecordItem."
+    },
+    "RecordItem": {
+      "name": "RecordItem",
+      "id": "6",
+      "multiplicity": "1..*",
+      "type": null,
+      "description": "Log, audit, or forensic data."
+    },
+    "AdditionalData": {
+      "name": "AdditionalData",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": null,
+      "description": "An extension mechanism for data not explicitly represented in the data model."
+    }
+  },
+  "attributes": {
+    "restriction": {
+      "name": "restriction",
+      "id": "7",
+      "multiplicity": "Optional",
+      "ident": "173",
+      "type": "ENUM",
+      "description": "This attribute has been defined in Section 3.2."
+    }
+  }
+}

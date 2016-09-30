@@ -1,0 +1,94 @@
+  -
+    src: templates/generate-path.c.mako
+    dst: ../iodefv2-path.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-print-json.h.mako
+    dst: ../include/iodefv2-document-print-json.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-read-json.c.mako
+    dst: ../iodefv2-document-read-json.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-tree-wrap.h.mako
+    dst: ../include/iodefv2-tree-wrap.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-print.h.mako
+    dst: ../include/iodefv2-document-print.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-read.h.mako
+    dst: ../include/iodefv2-document-read.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-write.h.mako
+    dst: ../include/iodefv2-document-write.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-id.h.mako
+    dst: ../include/iodefv2-document-id.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-tree-data.h.mako
+    dst: ../include/iodefv2-tree-data.h
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-write.c.mako
+    dst: ../iodefv2-document-write.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-read.c.mako
+    dst: ../iodefv2-document-read.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-print.c.mako
+    dst: ../iodefv2-document-print.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-tree-wrap.hxx.mako
+    dst: ../../bindings/c++/include/iodefv2-tree-wrap.hxx
+    schema: iodefv2
+
+  -
+    src: templates/generate-value-class-swig-mapping.i.mako
+    dst: ../../bindings/iodefv2-value-class-mapping.i
+    schema: iodefv2
+
+  -
+    src: templates/generate-tree-wrap.cxx.mako
+    dst: ../../bindings/c++/iodefv2-tree-wrap.cxx
+    schema: iodefv2
+
+  -
+    src: templates/generate-tree-wrap.c.mako
+    dst: ../iodefv2-tree-wrap.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-top-level-class-print-json.c.mako
+    dst: ../iodefv2-document-print-json.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-additional-data.c.mako
+    dst: ../iodefv2-additional-data.c
+    schema: iodefv2
+
+  -
+    src: templates/generate-additional-data.h.mako
+    dst: ../include/iodefv2-additional-data.h
+    schema: iodefv2

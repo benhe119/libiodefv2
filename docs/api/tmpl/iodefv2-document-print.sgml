@@ -1,0 +1,300 @@
+<!-- ##### SECTION Title ##### -->
+iodefv2-document-print
+
+<!-- ##### SECTION Short_Description ##### -->
+
+Dumping an IODEFV2 message as a string
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+This API provide method for dumping any IODEFV2 object as a string of characters.
+When dumping an object, the object and all of it's children are dumped to the
+provided #libiodefv2_io_t object. 
+</para>
+
+<para>
+The #libiodefv2_io_t object might be a buffer, a file, or even a socket. Check
+the #libiodefv2_io_t API for more information.
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+#libiodefv2_io_t
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION iodefv2_additional_data_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_reference_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_classification_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_user_id_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_user_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_address_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_process_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_web_service_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_snmp_service_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_service_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_node_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_source_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_file_access_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_inode_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_checksum_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_file_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_linkage_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_target_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_analyzer_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_alertident_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_impact_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_action_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_confidence_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_assessment_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_tool_alert_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_correlation_alert_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_overflow_alert_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_alert_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_heartbeat_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+
+<!-- ##### FUNCTION iodefv2_document_print ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@fd: 
+
+

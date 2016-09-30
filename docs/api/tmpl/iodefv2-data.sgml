@@ -1,0 +1,577 @@
+<!-- ##### SECTION Title ##### -->
+iodefv2-data
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM iodefv2_data_type_t ##### -->
+<para>
+
+</para>
+
+@IODEFV2_DATA_TYPE_UNKNOWN: 
+@IODEFV2_DATA_TYPE_CHAR: 
+@IODEFV2_DATA_TYPE_BYTE: 
+@IODEFV2_DATA_TYPE_UINT32: 
+@IODEFV2_DATA_TYPE_UINT64: 
+@IODEFV2_DATA_TYPE_FLOAT: 
+@IODEFV2_DATA_TYPE_CHAR_STRING: 
+@IODEFV2_DATA_TYPE_BYTE_STRING: 
+
+<!-- ##### FUNCTION iodefv2_data_new ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_ref ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char ##### -->
+<para>
+
+</para>
+
+@data: 
+@c: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_byte ##### -->
+<para>
+
+</para>
+
+@data: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_uint32 ##### -->
+<para>
+
+</para>
+
+@data: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_uint64 ##### -->
+<para>
+
+</para>
+
+@data: 
+@i: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_float ##### -->
+<para>
+
+</para>
+
+@data: 
+@f: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char ##### -->
+<para>
+
+</para>
+
+@data: 
+@c: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_byte ##### -->
+<para>
+
+</para>
+
+@data: 
+@i: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_uint32 ##### -->
+<para>
+
+</para>
+
+@data: 
+@i: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_uint64 ##### -->
+<para>
+
+</para>
+
+@data: 
+@i: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_float ##### -->
+<para>
+
+</para>
+
+@data: 
+@f: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_ptr_dup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@type: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_ptr_ref_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@type: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_ptr_nodup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@type: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_ptr_dup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@type: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_ptr_ref_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@type: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_ptr_nodup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@type: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char_string_dup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@str: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char_string_dup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@str: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char_string_ref_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char_string_nodup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char_string_ref_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char_string_nodup_fast ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char_string_ref ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char_string_dup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_char_string_nodup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char_string_ref ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char_string_dup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_char_string_nodup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@Returns: 
+
+
+<!-- ##### MACRO iodefv2_data_set_char_string_constant ##### -->
+<para>
+
+</para>
+
+@string: 
+@str: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_byte_string_ref ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_byte_string_dup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_new_byte_string_nodup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_byte_string_ref ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_byte_string_dup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_set_byte_string_nodup ##### -->
+<para>
+
+</para>
+
+@data: 
+@ptr: 
+@len: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_destroy ##### -->
+<para>
+
+</para>
+
+@data: 
+
+
+<!-- ##### FUNCTION iodefv2_data_copy_ref ##### -->
+<para>
+
+</para>
+
+@src: 
+@dst: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_copy_dup ##### -->
+<para>
+
+</para>
+
+@src: 
+@dst: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_clone ##### -->
+<para>
+
+</para>
+
+@src: 
+@dst: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_type ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_len ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_data ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_char ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_byte ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_uint32 ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_uint64 ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_float ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_char_string ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_get_byte_string ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_is_empty ##### -->
+<para>
+
+</para>
+
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_to_string ##### -->
+<para>
+
+</para>
+
+@data: 
+@out: 
+@Returns: 
+
+
+<!-- ##### FUNCTION iodefv2_data_destroy_internal ##### -->
+<para>
+
+</para>
+
+@data: 
+
+

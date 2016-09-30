@@ -1,0 +1,38 @@
+{
+  "name": "WebService",
+  "id": "102",
+  "description": "The WebService class carries additional information related to web traffic. ",
+  "color": "#BFBFBF",
+  "aggregates": {
+    "url": {
+      "name": "url",
+      "id": "0",
+      "multiplicity": "1",
+      "type": "STRING",
+      "description": "The URL in the request."
+    },
+    "cgi": {
+      "name": "cgi",
+      "id": "1",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The CGI script in the request, without arguments."
+    },
+    "http-method": {
+      "name": "http-method",
+      "id": "2",
+      "multiplicity": "0..1",
+      "type": "STRING",
+      "description": "The HTTP method (PUT, GET) used in the request."
+    },
+    "arg": {
+      "name": "arg",
+      "id": "3",
+      "multiplicity": "0..*",
+      "type": "STRING",
+      "description": "The arguments to the CGI script."
+    }
+  },
+  "attributes": {
+  }
+}

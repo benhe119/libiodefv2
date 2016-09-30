@@ -1,0 +1,142 @@
+{
+    "name": "RecordData", 
+    "color": "#ffcc00", 
+    "aggregates": {
+        "AdditionalData": {
+            "id": 0, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "AdditionalData", 
+            "description": "An extension mechanism for data not explicitly represented in thedata model."
+        }, 
+        "Description": {
+            "id": 1, 
+            "multiplicity": "0..*", 
+            "type": "ML_STRING", 
+            "name": "Description", 
+            "description": "Free-form textual description of the provided RecordItem data.  At minimum, this description should convey the significance of the provided RecordItem data."
+        }, 
+        "URL": {
+            "id": 2, 
+            "multiplicity": "0..*", 
+            "type": "URL", 
+            "name": "URL", 
+            "description": null
+        }, 
+        "CertificateData": {
+            "id": 3, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "CertificateData", 
+            "description": null
+        }, 
+        "RecordPattern": {
+            "id": 4, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "RecordPattern", 
+            "description": "A search string to precisely find the relevant data in a RecordItem."
+        }, 
+        "DateTime": {
+            "id": 5, 
+            "multiplicity": "0..1", 
+            "type": "DATETIME", 
+            "name": "DateTime", 
+            "description": "Timestamp of the RecordItem data."
+        }, 
+        "WindowsRegistryKeysModified": {
+            "id": 6, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "WindowsRegistryKeysModified", 
+            "description": null
+        }, 
+        "FileData": {
+            "id": 7, 
+            "multiplicity": "0..*", 
+            "type": null, 
+            "name": "FileData", 
+            "description": null
+        }, 
+        "Software": {
+            "id": 8, 
+            "multiplicity": "0..1", 
+            "type": null, 
+            "name": "Software", 
+            "description": "Information about the sensor used to generate the RecordItem data."
+        }
+    }, 
+    "attributes": {
+        "restriction": {
+            "ident": 121, 
+            "description": "This attribute has been defined in Section 3.2.", 
+            "multiplicity": "Optional", 
+            "values": [
+                {
+                    "rank": "1", 
+                    "keyword": "public", 
+                    "description": null
+                }, 
+                {
+                    "rank": "2", 
+                    "keyword": "partner", 
+                    "description": null
+                }, 
+                {
+                    "rank": "3", 
+                    "keyword": "need-to-know", 
+                    "description": null
+                }, 
+                {
+                    "rank": "4", 
+                    "keyword": "private", 
+                    "description": null
+                }, 
+                {
+                    "rank": "5", 
+                    "keyword": "default", 
+                    "description": null
+                }, 
+                {
+                    "rank": "6", 
+                    "keyword": "white", 
+                    "description": null
+                }, 
+                {
+                    "rank": "7", 
+                    "keyword": "green", 
+                    "description": null
+                }, 
+                {
+                    "rank": "8", 
+                    "keyword": "amber", 
+                    "description": null
+                }, 
+                {
+                    "rank": "9", 
+                    "keyword": "red", 
+                    "description": null
+                }
+            ], 
+            "type": "ENUM", 
+            "id": 9, 
+            "name": "restriction"
+        }, 
+        "ext-restriction": {
+            "id": 10, 
+            "multiplicity": "Optional", 
+            "type": "STRING", 
+            "name": "ext-restriction", 
+            "description": null
+        }, 
+        "observable-id": {
+            "id": 11, 
+            "multiplicity": "Optional", 
+            "type": "ID", 
+            "name": "observable-id", 
+            "description": null
+        }
+    }, 
+    "id": 122, 
+    "description": "The RecordData class groups log or audit data from a given sensor (e.g., IDS, firewall log) and provides a way to annotate the output. "
+}
